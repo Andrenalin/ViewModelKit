@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pap-2L-qzp">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLf-oD-fLP">
+                                <rect key="frame" x="165" y="64" width="45" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VenueID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61Y-Wd-l90">
+                                <rect key="frame" x="155.5" y="98.5" width="64.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90f-lq-TJ2">
+                                <rect key="frame" x="138" y="319" width="100" height="30"/>
+                                <state key="normal" title="Change Model"/>
+                                <connections>
+                                    <action selector="tappedChangedModel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEt-6g-CUP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="61Y-Wd-l90" firstAttribute="top" secondItem="ZLf-oD-fLP" secondAttribute="bottom" constant="14" id="8d3-7G-nLV"/>
+                            <constraint firstItem="ZLf-oD-fLP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fqy-ny-FTd"/>
+                            <constraint firstItem="90f-lq-TJ2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="VYb-h5-XZf"/>
+                            <constraint firstItem="90f-lq-TJ2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dIN-ft-B4a"/>
+                            <constraint firstItem="61Y-Wd-l90" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lwz-Ar-ghd"/>
+                            <constraint firstItem="ZLf-oD-fLP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pJQ-kz-ZRd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Demo" id="Ntr-Hl-aXd">
+                        <rightBarButtonItems>
+                            <barButtonItem title="CV" id="p02-sM-I24">
+                                <connections>
+                                    <segue destination="WtO-MG-b4X" kind="show" id="zbg-1N-4VL"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="TV" id="xFw-Qm-5Zb">
+                                <connections>
+                                    <segue destination="Dxr-0h-4yA" kind="show" id="bEn-Xf-dR2"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameLabel" destination="ZLf-oD-fLP" id="com-Rw-Ict"/>
+                        <outlet property="venueIdLabel" destination="61Y-Wd-l90" id="xmC-yK-JJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="37.331334332833585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ODq-L5-GdA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pap-2L-qzp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Set-Pj-9N6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hfb-yM-wJn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dB-fe-0Y1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="37"/>
+        </scene>
+        <!--TableViewController-->
+        <scene sceneID="CNJ-Cn-5sh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TableViewController" id="Dxr-0h-4yA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOT-Tl-dXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1820" y="37"/>
+        </scene>
+        <!--CollectionViewController-->
+        <scene sceneID="7mJ-Xr-dkG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CollectionViewController" id="WtO-MG-b4X" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAp-eu-I4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842" y="101"/>
+        </scene>
+    </scenes>
+</document>
