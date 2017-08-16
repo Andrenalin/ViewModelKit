@@ -1,0 +1,19 @@
+language: objective-c
+osx_image: xcode8.3
+#xcode_project: ViewModelKit.xcodeproj
+xcode_workspace: ViewModelKit.xcworkspace
+xcode_scheme: ViewModelKit
+xcode_sdk: iphonesimulator9.3
+env:
+  global:
+    - FRAMEWORK_NAME=ViewModelKit
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  # bootstrap the dependencies for the project
+  # you can remove if you don't have dependencies
+  - carthage bootstrap
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
