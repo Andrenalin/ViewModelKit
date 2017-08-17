@@ -1,0 +1,26 @@
+language: objective-c
+osx_image: xcode8.3
+#xcode_project: ViewModelKit.xcodeproj
+xcode_workspace: ViewModelKit.xcworkspace
+xcode_scheme: ViewModelKit
+xcode_sdk: iphonesimulator10.3
+env:
+  global:
+    - FRAMEWORK_NAME=ViewModelKit
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+  - brew outdated xctool || brew upgrade xctool
+  - pip install --user cpp-coveralls
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet  
+before_script:
+  - carthage bootstrap
+script:
+ - set -o pipefail;
+ - xcodebuild test -project ViewModelKit.xcodeproj -scheme ViewModelKit -sdk iphonesimulator -destination "platform=iOS Simulator,OS=latest,name=iPhone 5" | xcpretty
+ - xcodebuild test -project ViewModelKit.xcodeproj -scheme ViewModelKit -sdk iphonesimulator -destination "platform=iOS Simulator,OS=latest,name=iPhone 5s" | xcpretty  
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
+after_success:
+  - ./Cocoanetics-Ruby/coveralls.rb --exclude-folder ViewModelKitTests --exclude-folder Carthage --exclude-folder docs --exclude-folder VMKExample
