@@ -10,9 +10,9 @@ env:
 before_install:
   - brew update
   - brew outdated carthage || brew upgrade carthage
-  - brew outdated xctool || brew upgrade xctool
   - pip install --user cpp-coveralls
-  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet  
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - gem install slather
 before_script:
   - carthage bootstrap
 script:
@@ -23,4 +23,4 @@ before_deploy:
   - carthage build --no-skip-current
   - carthage archive $FRAMEWORK_NAME
 after_success:
-  - ./Cocoanetics-Ruby/coveralls.rb --exclude-folder ViewModelKitTests --exclude-folder Carthage --exclude-folder docs --exclude-folder VMKExample
+  - slather

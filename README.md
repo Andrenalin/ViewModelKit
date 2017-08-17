@@ -1,6 +1,6 @@
 # ViewModelKit
 
-[![Build Status](https://travis-ci.org/Andrenalin/ViewModelKit.svg?branch=master)](https://travis-ci.org/Andrenalin/ViewModelKit)
+[![Build Status](https://travis-ci.org/Andrenalin/ViewModelKit.svg?branch=develop)](https://travis-ci.org/Andrenalin/ViewModelKit)
 [![Coverage Status](https://coveralls.io/repos/github/Andrenalin/ViewModelKit/badge.svg)](https://coveralls.io/github/Andrenalin/ViewModelKit)
 [![codebeat badge](https://codebeat.co/badges/dc28778a-446d-4214-bffc-73789a3d4271)](https://codebeat.co/projects/github-com-andrenalin-viewmodelkit-develop)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
