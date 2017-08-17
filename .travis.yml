@@ -14,8 +14,6 @@ before_install:
   - pip install --user cpp-coveralls
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet  
 before_script:
-  # bootstrap the dependencies for the project
-  # you can remove if you don't have dependencies
   - carthage bootstrap
 script:
  - set -o pipefail;
@@ -24,3 +22,5 @@ script:
 before_deploy:
   - carthage build --no-skip-current
   - carthage archive $FRAMEWORK_NAME
+after_success:
+  - ./Cocoanetics-Ruby/coveralls.rb --exclude-folder ViewModelKitTests --exclude-folder Carthage --exclude-folder docs --exclude-folder VMKExample
