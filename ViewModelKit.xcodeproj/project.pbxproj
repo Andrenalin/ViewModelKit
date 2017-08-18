@@ -1,0 +1,1560 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		216D1E2B1DD379620085D8AB /* VMKMutableArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 216D1E291DD379620085D8AB /* VMKMutableArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		216D1E2C1DD379620085D8AB /* VMKMutableArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D1E2A1DD379620085D8AB /* VMKMutableArrayDataSource.m */; };
+		216D1E3A1DD37BE90085D8AB /* VMKCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 216D1E371DD37BE90085D8AB /* VMKCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		216D1E3B1DD37BE90085D8AB /* VMKCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D1E381DD37BE90085D8AB /* VMKCollectionViewCell.m */; };
+		216D1E3F1DD37BFD0085D8AB /* VMKCollectionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 216D1E3D1DD37BFD0085D8AB /* VMKCollectionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		216D1E401DD37BFD0085D8AB /* VMKCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D1E3E1DD37BFD0085D8AB /* VMKCollectionViewController.m */; };
+		216D1E471DD37C160085D8AB /* VMKCollectionViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 216D1E411DD37C160085D8AB /* VMKCollectionViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		216D1E481DD37C160085D8AB /* VMKCollectionViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 216D1E421DD37C160085D8AB /* VMKCollectionViewDataSource.m */; };
+		216D1E491DD37C160085D8AB /* VMKCollectionViewDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 216D1E431DD37C160085D8AB /* VMKCollectionViewDataSourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0412421F2A16D6008C601E /* OCHamcrest.framework in Copy Testing Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91E8B1F2A125100B7C633 /* OCHamcrest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E0412431F2A16D6008C601E /* OCMockito.framework in Copy Testing Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91E8A1F2A125100B7C633 /* OCMockito.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E041CC11C35637B002D3241 /* UIView+VMKInspectables.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E041CBF1C35637B002D3241 /* UIView+VMKInspectables.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E041CC21C35637B002D3241 /* UIView+VMKInspectables.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E041CC01C35637B002D3241 /* UIView+VMKInspectables.m */; };
+		8E041CC51C35698B002D3241 /* VMKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E041CC31C35698B002D3241 /* VMKImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E041CC61C35698B002D3241 /* VMKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E041CC41C35698B002D3241 /* VMKImageView.m */; };
+		8E041CCA1C35743B002D3241 /* VMKTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E041CC81C35743B002D3241 /* VMKTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E041CCB1C35743B002D3241 /* VMKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E041CC91C35743B002D3241 /* VMKTextView.m */; };
+		8E041CCE1C35744E002D3241 /* VMKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E041CCC1C35744E002D3241 /* VMKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E041CCF1C35744E002D3241 /* VMKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E041CCD1C35744E002D3241 /* VMKTextField.m */; };
+		8E041CD21C357469002D3241 /* VMKLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E041CD01C357469002D3241 /* VMKLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E041CD31C357469002D3241 /* VMKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E041CD11C357469002D3241 /* VMKLabel.m */; };
+		8E041CD71C358393002D3241 /* VMKInsertCellViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E041CD51C358393002D3241 /* VMKInsertCellViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E041CD81C358393002D3241 /* VMKInsertCellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E041CD61C358393002D3241 /* VMKInsertCellViewModel.m */; };
+		8E05BEA91D4B4AF100E4D13A /* VMKViewModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E05BEA81D4B4AF100E4D13A /* VMKViewModel+Private.h */; };
+		8E0A1B761C53AA3700AF240D /* VMKEditDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0A1B741C53AA3700AF240D /* VMKEditDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0A1B771C53AA3700AF240D /* VMKEditDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E0A1B751C53AA3700AF240D /* VMKEditDataSource.m */; };
+		8E178B991C4FFD8E0036E4DD /* VMKDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E178B981C4FFD8E0036E4DD /* VMKDataSourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E18CA2B1E29296D00AFE763 /* FakePasteBoardWithHasImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18CA2A1E29296D00AFE763 /* FakePasteBoardWithHasImages.m */; };
+		8E18CA2E1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18CA2D1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.m */; };
+		8E18CA321E2930F000AFE763 /* VMKControllerModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E18CA311E2930F000AFE763 /* VMKControllerModelTests.m */; };
+		8E2902EF1C1DCCB000DAD111 /* VMKArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2902ED1C1DCCB000DAD111 /* VMKArrayDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E2902F01C1DCCB000DAD111 /* VMKArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2902EE1C1DCCB000DAD111 /* VMKArrayDataSource.m */; };
+		8E2902FF1C1DED2F00DAD111 /* VMKCellType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2902FD1C1DED2F00DAD111 /* VMKCellType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E2BC8791E46597B00D1B749 /* VMKMutableArrayDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2BC8781E46597B00D1B749 /* VMKMutableArrayDataSourceTests.m */; };
+		8E2BC87B1E47857C00D1B749 /* VMKCellViewModelFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E2BC87A1E47857C00D1B749 /* VMKCellViewModelFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E2BC8801E47A40000D1B749 /* VMKTableViewDelegateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E2BC87F1E47A40000D1B749 /* VMKTableViewDelegateTests.m */; };
+		8E32129A1C32B4A3005A40C6 /* VMKChooseImageViewModelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3212991C32B4A3005A40C6 /* VMKChooseImageViewModelType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E3953E41DE4480C002F48F2 /* VMKTableViewRowActionViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3953E21DE4480C002F48F2 /* VMKTableViewRowActionViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E3953E51DE4480C002F48F2 /* VMKTableViewRowActionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3953E31DE4480C002F48F2 /* VMKTableViewRowActionViewModel.m */; };
+		8E3953E81DE44C79002F48F2 /* VMKTableViewRowActionsType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3953E61DE44C79002F48F2 /* VMKTableViewRowActionsType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E42B4221C5E49CA00A7C0A6 /* VMKViewModelCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42B4211C5E49CA00A7C0A6 /* VMKViewModelCacheTests.m */; };
+		8E42B4241C5E7BBD00A7C0A6 /* VMKChangeSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E42B4231C5E7BBD00A7C0A6 /* VMKChangeSetTests.m */; };
+		8E489E1E1C2D94D200D47401 /* VMKTableViewDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E489E1B1C2D94D200D47401 /* VMKTableViewDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E489E1F1C2D94D200D47401 /* VMKTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E489E1C1C2D94D200D47401 /* VMKTableViewDataSource.m */; };
+		8E4D252F1C41639400403491 /* VMKTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E4D252D1C41639400403491 /* VMKTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E4D25301C41639400403491 /* VMKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4D252E1C41639400403491 /* VMKTableViewCell.m */; };
+		8E4F6ADE1E1BF964001B10B0 /* VMKTableViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4F6ADD1E1BF964001B10B0 /* VMKTableViewCellTests.m */; };
+		8E50AF3B1C516E2F00EC98BD /* VMKChooseImageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E50AF391C516E2F00EC98BD /* VMKChooseImageController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E50AF3C1C516E2F00EC98BD /* VMKChooseImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E50AF3A1C516E2F00EC98BD /* VMKChooseImageController.m */; };
+		8E50E7311D4E2941001F3DC2 /* VMKViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E50E7301D4E2941001F3DC2 /* VMKViewControllerTests.m */; };
+		8E50E7341D4E6544001F3DC2 /* FakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E50E7331D4E6544001F3DC2 /* FakeViewController.m */; };
+		8E5517B21E3B5E63001D958C /* VMKCollectionViewDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5517B11E3B5E63001D958C /* VMKCollectionViewDataSourceTests.m */; };
+		8E5517B41E3B62A1001D958C /* VMKCollectionViewDataSource+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5517B31E3B62A1001D958C /* VMKCollectionViewDataSource+Private.h */; };
+		8E5517B71E3B75A0001D958C /* VMKCollectionViewCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5517B61E3B75A0001D958C /* VMKCollectionViewCellTests.m */; };
+		8E5517B91E3B8115001D958C /* VMKCollectionViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5517B81E3B8115001D958C /* VMKCollectionViewControllerTests.m */; };
+		8E5517BB1E3B8FB1001D958C /* VMKTableViewHeaderFooterViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5517BA1E3B8FB1001D958C /* VMKTableViewHeaderFooterViewTests.m */; };
+		8E5EBBC31D479873003C7522 /* VMKObservableManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EBBC21D479873003C7522 /* VMKObservableManagerTests.m */; };
+		8E5EBBC51D4799FA003C7522 /* VMKObservableManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5EBBC41D4799FA003C7522 /* VMKObservableManager+Private.h */; };
+		8E6278701DD5BF9B0073678C /* VMKGroupedDataSourceType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E62786F1DD5BF9B0073678C /* VMKGroupedDataSourceType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E649D031E1FBE4100D8572D /* VMKInsertCellViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E649D021E1FBE4100D8572D /* VMKInsertCellViewModelTests.m */; };
+		8E649D061E1FE4EF00D8572D /* VMKAlertControllerViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E649D051E1FE4EF00D8572D /* VMKAlertControllerViewModelTests.m */; };
+		8E649D091E1FE7E000D8572D /* VMKAlertViewModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E649D081E1FE7E000D8572D /* VMKAlertViewModel+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E649D0B1E1FE90E00D8572D /* VMKAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E649D0A1E1FE90E00D8572D /* VMKAlertControllerTests.m */; };
+		8E6958541DD4C13F006CF01A /* VMKGroupedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E6958521DD4C13F006CF01A /* VMKGroupedDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E6958551DD4C13F006CF01A /* VMKGroupedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6958531DD4C13F006CF01A /* VMKGroupedDataSource.m */; };
+		8E6AC4B01DE0976F00399194 /* VMKSingleChangeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AC4AF1DE0976F00399194 /* VMKSingleChangeTests.m */; };
+		8E6AC4B61DE1E14500399194 /* VMKMappedChildDataSourceIndexPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AC4B51DE1E14500399194 /* VMKMappedChildDataSourceIndexPathTests.m */; };
+		8E6AC4B91DE1E5A600399194 /* VMKMultipleDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6AC4B81DE1E5A600399194 /* VMKMultipleDataSourceTests.m */; };
+		8E6EABE61DF9B2BA007FFF39 /* VMKMultiSectionDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6EABE51DF9B2BA007FFF39 /* VMKMultiSectionDataSourceTests.m */; };
+		8E728AB51D4801C800A12285 /* VMKObserverNotificationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E728AB41D4801C800A12285 /* VMKObserverNotificationManagerTests.m */; };
+		8E728AB81D48026500A12285 /* FakeNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E728AB71D48026500A12285 /* FakeNotificationCenter.m */; };
+		8E7383A41DE3864A00FFF9AF /* VMKAlertViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7383A21DE3864A00FFF9AF /* VMKAlertViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E7383A51DE3864A00FFF9AF /* VMKAlertViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7383A31DE3864A00FFF9AF /* VMKAlertViewModel.m */; };
+		8E74828F1E0D3D4E00D03768 /* VMKDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E74828E1E0D3D4E00D03768 /* VMKDataSourceTests.m */; };
+		8E74F6E51DE2CB860062B14D /* VMKArrayModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E74F6E31DE2CB860062B14D /* VMKArrayModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E74F6E61DE2CB860062B14D /* VMKArrayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E74F6E41DE2CB860062B14D /* VMKArrayModel.m */; };
+		8E74F6E81DE2CED30062B14D /* VMKArrayModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E74F6E71DE2CED30062B14D /* VMKArrayModelTests.m */; };
+		8E74F6EC1DE2D89F0062B14D /* VMKArrayUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E74F6EA1DE2D89F0062B14D /* VMKArrayUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E74F6ED1DE2D89F0062B14D /* VMKArrayUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E74F6EB1DE2D89F0062B14D /* VMKArrayUpdater.m */; };
+		8E74F6EF1DE2DB4E0062B14D /* VMKArrayUpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E74F6EE1DE2DB4E0062B14D /* VMKArrayUpdaterTests.m */; };
+		8E7D285A1DE45EB0004B3A03 /* VMKTableViewRowActionCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7D28581DE45EB0004B3A03 /* VMKTableViewRowActionCreator.h */; };
+		8E7D285B1DE45EB0004B3A03 /* VMKTableViewRowActionCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7D28591DE45EB0004B3A03 /* VMKTableViewRowActionCreator.m */; };
+		8E7EBCB31E08127C00854F31 /* VMKGroupedDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7EBCB21E08127C00854F31 /* VMKGroupedDataSourceTests.m */; };
+		8E7EBCB71E08174200854F31 /* VMKGroupedDataSource+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E7EBCB51E08174200854F31 /* VMKGroupedDataSource+Private.h */; };
+		8E80F29C1D3BE77300A3ACC8 /* VMKViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80F29B1D3BE77300A3ACC8 /* VMKViewModelTests.m */; };
+		8E80F29E1D3BE94300A3ACC8 /* VMKBindingUpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80F29D1D3BE94300A3ACC8 /* VMKBindingUpdaterTests.m */; };
+		8E84489B1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8448991C4BCCF60070C3AD /* NSObject+VMKCheckKVO.h */; };
+		8E84489C1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E84489A1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.m */; };
+		8E84489F1C4BF97F0070C3AD /* VMKDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E84489D1C4BF97F0070C3AD /* VMKDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8448A01C4BF97F0070C3AD /* VMKDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E84489E1C4BF97F0070C3AD /* VMKDataSource.m */; };
+		8E8448A41C4BFD240070C3AD /* VMKMultipleDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8448A21C4BFD240070C3AD /* VMKMultipleDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8448A51C4BFD240070C3AD /* VMKMultipleDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8448A31C4BFD240070C3AD /* VMKMultipleDataSource.m */; };
+		8E8448AA1C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8448A81C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8448AB1C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8448A91C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.m */; };
+		8E8FD9861E16C925006AD001 /* VMKArrayDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8FD9851E16C925006AD001 /* VMKArrayDataSourceTests.m */; };
+		8E94A24A1C2C0E860006E33A /* VMKChangeWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E94A2491C2C0E860006E33A /* VMKChangeWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E94A24C1C2C0EC90006E33A /* VMKChangeWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E94A24B1C2C0EC90006E33A /* VMKChangeWatcher.m */; };
+		8E9542EC1EA7B08400D9E20C /* VMKObservable+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9542EA1EA7B08400D9E20C /* VMKObservable+Private.h */; };
+		8E9553871E099B9900AA2759 /* VMKEditDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9553861E099B9900AA2759 /* VMKEditDataSourceTests.m */; };
+		8E9553891E099E4000AA2759 /* VMKEditDataSource+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9553881E099CEE00AA2759 /* VMKEditDataSource+Private.h */; };
+		8E9AC66A1C3B069B009F66D5 /* VMKTableViewDataSourceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9AC6691C3B069B009F66D5 /* VMKTableViewDataSourceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E9E15DA1E20149100B73BFA /* VMKChooseImageAlertViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9E15D81E20149100B73BFA /* VMKChooseImageAlertViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E9E15DB1E20149100B73BFA /* VMKChooseImageAlertViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E15D91E20149100B73BFA /* VMKChooseImageAlertViewModel.m */; };
+		8E9E15DD1E2014C000B73BFA /* VMKChooseImageAlertViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E15DC1E2014C000B73BFA /* VMKChooseImageAlertViewModelTests.m */; };
+		8E9E15DF1E2017ED00B73BFA /* VMKChooseImageAlertViewModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E9E15DE1E2017ED00B73BFA /* VMKChooseImageAlertViewModel+Private.h */; };
+		8EA264B71DD8CC82006BC12A /* VMKSingleChange.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA264B51DD8CC82006BC12A /* VMKSingleChange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EA264B81DD8CC82006BC12A /* VMKSingleChange.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA264B61DD8CC82006BC12A /* VMKSingleChange.m */; };
+		8EA264BA1DD8D033006BC12A /* VMKSingleChange+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA264B91DD8D033006BC12A /* VMKSingleChange+Private.h */; };
+		8EA636251C2AB170003CDA2A /* VMKDeleteWatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA636231C2AB170003CDA2A /* VMKDeleteWatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EA636261C2AB170003CDA2A /* VMKDeleteWatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA636241C2AB170003CDA2A /* VMKDeleteWatcher.m */; };
+		8EACB2B01E44933800B95CD0 /* VMKCoreDataViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EACB2AF1E44933800B95CD0 /* VMKCoreDataViewModelTests.m */; };
+		8EAD76E71E216CA700932BE4 /* VMKChooseImageViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EAD76E51E216CA700932BE4 /* VMKChooseImageViewModel.h */; };
+		8EAD76E81E216CA700932BE4 /* VMKChooseImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD76E61E216CA700932BE4 /* VMKChooseImageViewModel.m */; };
+		8EAD76EA1E224BF500932BE4 /* VMKImageEditingType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EAD76E91E224BF500932BE4 /* VMKImageEditingType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EAD76F51E22599600932BE4 /* VMKChooseImageViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EAD76F41E22599600932BE4 /* VMKChooseImageViewModelTests.m */; };
+		8EB0B5A21DDA49B6005604B1 /* VMKFetchedUpdaterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB0B5A11DDA49B6005604B1 /* VMKFetchedUpdaterTests.m */; };
+		8EB0B5A41DDA4D01005604B1 /* VMKFetchedUpdater+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB0B5A31DDA4ADA005604B1 /* VMKFetchedUpdater+Private.h */; };
+		8EBCC82B1CB2F2C800E8AF2B /* VMKObserverNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBCC8281CB2F2C800E8AF2B /* VMKObserverNotificationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EBCC82C1CB2F2C800E8AF2B /* VMKObserverNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC8291CB2F2C800E8AF2B /* VMKObserverNotificationManager.m */; };
+		8EBCC82D1CB2F2C800E8AF2B /* VMKObserverNotificationManager+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBCC82A1CB2F2C800E8AF2B /* VMKObserverNotificationManager+Private.h */; };
+		8EC31F2E1DD61A9A00F09396 /* VMKMultiRowDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC31F2C1DD61A9A00F09396 /* VMKMultiRowDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC31F2F1DD61A9A00F09396 /* VMKMultiRowDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC31F2D1DD61A9A00F09396 /* VMKMultiRowDataSource.m */; };
+		8EC31F311DD61C4900F09396 /* VMKMultipleDataSource+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC31F301DD61C4900F09396 /* VMKMultipleDataSource+Private.h */; };
+		8EC31F341DD6258900F09396 /* VMKMultiSectionDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EC31F321DD6258900F09396 /* VMKMultiSectionDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EC31F351DD6258900F09396 /* VMKMultiSectionDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC31F331DD6258900F09396 /* VMKMultiSectionDataSource.m */; };
+		8EC930B41E1BB55300B68467 /* VMKTableViewRowActionViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC930B31E1BB55300B68467 /* VMKTableViewRowActionViewModelTests.m */; };
+		8EC930B61E1BB8CB00B68467 /* VMKTableViewRowActionCreatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EC930B51E1BB8CB00B68467 /* VMKTableViewRowActionCreatorTests.m */; };
+		8EC956121F2A13430008F246 /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91E8B1F2A125100B7C633 /* OCHamcrest.framework */; };
+		8EC956131F2A13430008F246 /* OCMockito.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB91E8A1F2A125100B7C633 /* OCMockito.framework */; };
+		8ECA41D11DC2045A00754E01 /* VMKTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECA41D01DC2045A00754E01 /* VMKTableViewControllerTests.m */; };
+		8ECA41D71DC2316700754E01 /* VMKViewCellType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECA41D61DC2312E00754E01 /* VMKViewCellType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECB4CF01E7FB6B50001DB18 /* NSObject+VMKCheckKVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB4CEF1E7FB6B50001DB18 /* NSObject+VMKCheckKVOTests.m */; };
+		8ECB4CF31E7FC0E70001DB18 /* FakeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB4CF21E7FC0E70001DB18 /* FakeCollectionView.m */; };
+		8ECEB9BB1C30768D0012AE8B /* VMKTableViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEB9B91C30768D0012AE8B /* VMKTableViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEB9BC1C30768D0012AE8B /* VMKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEB9BA1C30768D0012AE8B /* VMKTableViewController.m */; };
+		8ECEB9D41C3161B70012AE8B /* VMKEditingType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEB9D31C3161B70012AE8B /* VMKEditingType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEC1D11E798BA600DAEC99 /* FakeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEC1D01E798BA600DAEC99 /* FakeTableView.m */; };
+		8ECEE4CA1C1C8CE200017352 /* ViewModelKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE4C91C1C8CE200017352 /* ViewModelKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE4D11C1C8CE200017352 /* ViewModelKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ECEE4C61C1C8CE200017352 /* ViewModelKit.framework */; };
+		8ECEE4F91C1C8EAF00017352 /* VMKObservable.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE4EE1C1C8EAF00017352 /* VMKObservable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE4FA1C1C8EAF00017352 /* VMKObservable.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEE4EF1C1C8EAF00017352 /* VMKObservable.m */; };
+		8ECEE4FB1C1C8EAF00017352 /* VMKObservableManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE4F01C1C8EAF00017352 /* VMKObservableManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE4FC1C1C8EAF00017352 /* VMKObservableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEE4F11C1C8EAF00017352 /* VMKObservableManager.m */; };
+		8ECEE4FD1C1C8EAF00017352 /* VMKFetchedDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE4F21C1C8EAF00017352 /* VMKFetchedDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE4FE1C1C8EAF00017352 /* VMKFetchedDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEE4F31C1C8EAF00017352 /* VMKFetchedDataSource.m */; };
+		8ECEE5011C1C8EAF00017352 /* VMKDataSourceType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE4F61C1C8EAF00017352 /* VMKDataSourceType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE5081C1C8EF000017352 /* VMKViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE5041C1C8EF000017352 /* VMKViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE5091C1C8EF000017352 /* VMKViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEE5051C1C8EF000017352 /* VMKViewModel.m */; };
+		8ECEE50A1C1C8EF000017352 /* VMKCoreDataViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE5061C1C8EF000017352 /* VMKCoreDataViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE50B1C1C8EF000017352 /* VMKCoreDataViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEE5071C1C8EF000017352 /* VMKCoreDataViewModel.m */; };
+		8ECEE6131C1CA69800017352 /* VMKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE6111C1CA69800017352 /* VMKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECEE6141C1CA69800017352 /* VMKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEE6121C1CA69800017352 /* VMKViewController.m */; };
+		8ECEE61B1C1CB72500017352 /* VMKViewModelControllerType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECEE61A1C1CB72500017352 /* VMKViewModelControllerType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ECF58281F3B636A005E5758 /* VMKMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ECF58271F3B62D4005E5758 /* VMKMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ED20EF71DE3599D00145C93 /* VMKAlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ED20EF51DE3599D00145C93 /* VMKAlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ED20EF81DE3599D00145C93 /* VMKAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED20EF61DE3599D00145C93 /* VMKAlertController.m */; };
+		8ED20EFA1DE35A1300145C93 /* VMKAlertViewModelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ED20EF91DE35A1300145C93 /* VMKAlertViewModelType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ED657F61D3C093100DCB5E9 /* VMKObservableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED657F51D3C093100DCB5E9 /* VMKObservableTests.m */; };
+		8ED657F91D3C0DC900DCB5E9 /* FakeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED657F81D3C0DC900DCB5E9 /* FakeObject.m */; };
+		8EDE0C1E1C4AB1B30091B48B /* VMKControllerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDE0C1C1C4AB1B30091B48B /* VMKControllerModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EDE0C1F1C4AB1B30091B48B /* VMKControllerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE0C1D1C4AB1B30091B48B /* VMKControllerModel.m */; };
+		8EE0DB411C3854430059A059 /* VMKTableViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE0DB3F1C3854430059A059 /* VMKTableViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE0DB421C3854430059A059 /* VMKTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0DB401C3854430059A059 /* VMKTableViewDelegate.m */; };
+		8EE0DB4A1C38700E0059A059 /* VMKBindingUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE0DB481C38700E0059A059 /* VMKBindingUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE0DB4B1C38700E0059A059 /* VMKBindingUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE0DB491C38700E0059A059 /* VMKBindingUpdater.m */; };
+		8EE22C921C39853000BF685F /* VMKViewModelCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE22C901C39853000BF685F /* VMKViewModelCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE22C931C39853000BF685F /* VMKViewModelCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE22C911C39853000BF685F /* VMKViewModelCache.m */; };
+		8EE22C961C39A3D600BF685F /* VMKFetchedUpdater.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE22C941C39A3D600BF685F /* VMKFetchedUpdater.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE22C971C39A3D600BF685F /* VMKFetchedUpdater.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE22C951C39A3D600BF685F /* VMKFetchedUpdater.m */; };
+		8EE22C9B1C39A8F800BF685F /* VMKChangeSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EE22C991C39A8F800BF685F /* VMKChangeSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE22C9C1C39A8F800BF685F /* VMKChangeSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE22C9A1C39A8F800BF685F /* VMKChangeSet.m */; };
+		8EE3CB191DEC0F8F0035E347 /* VMKMultiRowDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3CB181DEC0F8F0035E347 /* VMKMultiRowDataSourceTests.m */; };
+		8EE791DC1E210A3500E10F64 /* TestAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EE791DB1E210A3500E10F64 /* TestAssets.xcassets */; };
+		8EE791DE1E210FF100E10F64 /* VMKChooseImageControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE791DD1E210FF100E10F64 /* VMKChooseImageControllerTests.m */; };
+		8EE8BAB61E44BB7600EA47B3 /* VMKViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE8BAB51E44BB7600EA47B3 /* VMKViewTests.m */; };
+		8EE8BAC01E44C28400EA47B3 /* UIView+VMKInspectableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE8BABF1E44C28400EA47B3 /* UIView+VMKInspectableTests.m */; };
+		8EE8BAC41E44D00300EA47B3 /* VMKFetchedDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE8BAC31E44D00300EA47B3 /* VMKFetchedDataSourceTests.m */; };
+		8EF2F2F11DDB23C200C5C159 /* VMKView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF2F2EF1DDB23C200C5C159 /* VMKView.h */; };
+		8EF2F2F21DDB23C200C5C159 /* VMKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF2F2F01DDB23C200C5C159 /* VMKView.m */; };
+		8EF417F91E448BBC00E83E3F /* VMKChangeWatcher+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EF417F81E448BBC00E83E3F /* VMKChangeWatcher+Private.h */; };
+		8EF417FB1E448D3700E83E3F /* VMKChangeWatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF417FA1E448D3700E83E3F /* VMKChangeWatcherTests.m */; };
+		8EFC7A1A1E1A696B00A9B74A /* VMKTableViewDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC7A191E1A696B00A9B74A /* VMKTableViewDataSourceTests.m */; };
+		8EFCDB4D1E4384F3007714F8 /* VMKDeleteWatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFCDB4C1E4384F3007714F8 /* VMKDeleteWatcherTests.m */; };
+		8EFDC4B31C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFDC4B11C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D79B24001DD4749400B266DD /* VMKTableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B23FE1DD4749400B266DD /* VMKTableViewHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D79B24011DD4749400B266DD /* VMKTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B23FF1DD4749400B266DD /* VMKTableViewHeaderFooterView.m */; };
+		D79B24051DD48CA500B266DD /* VMKHeaderFooterType.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B24041DD480C600B266DD /* VMKHeaderFooterType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D79B24061DD48CC500B266DD /* VMKViewHeaderFooterType.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B24021DD477BB00B266DD /* VMKViewHeaderFooterType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8ECEE4D21C1C8CE200017352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8ECEE4BD1C1C8CE200017352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8ECEE4C51C1C8CE200017352;
+			remoteInfo = ViewModelKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8E0412411F2A16C2008C601E /* Copy Testing Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8E0412421F2A16D6008C601E /* OCHamcrest.framework in Copy Testing Frameworks */,
+				8E0412431F2A16D6008C601E /* OCMockito.framework in Copy Testing Frameworks */,
+			);
+			name = "Copy Testing Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		216D1E291DD379620085D8AB /* VMKMutableArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMutableArrayDataSource.h; sourceTree = "<group>"; };
+		216D1E2A1DD379620085D8AB /* VMKMutableArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMutableArrayDataSource.m; sourceTree = "<group>"; };
+		216D1E371DD37BE90085D8AB /* VMKCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewCell.h; sourceTree = "<group>"; };
+		216D1E381DD37BE90085D8AB /* VMKCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionViewCell.m; sourceTree = "<group>"; };
+		216D1E3D1DD37BFD0085D8AB /* VMKCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewController.h; sourceTree = "<group>"; };
+		216D1E3E1DD37BFD0085D8AB /* VMKCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionViewController.m; sourceTree = "<group>"; };
+		216D1E411DD37C160085D8AB /* VMKCollectionViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewDataSource.h; sourceTree = "<group>"; };
+		216D1E421DD37C160085D8AB /* VMKCollectionViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionViewDataSource.m; sourceTree = "<group>"; };
+		216D1E431DD37C160085D8AB /* VMKCollectionViewDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionViewDataSourceDelegate.h; sourceTree = "<group>"; };
+		8E041CBF1C35637B002D3241 /* UIView+VMKInspectables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+VMKInspectables.h"; sourceTree = "<group>"; };
+		8E041CC01C35637B002D3241 /* UIView+VMKInspectables.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VMKInspectables.m"; sourceTree = "<group>"; };
+		8E041CC31C35698B002D3241 /* VMKImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKImageView.h; sourceTree = "<group>"; };
+		8E041CC41C35698B002D3241 /* VMKImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKImageView.m; sourceTree = "<group>"; };
+		8E041CC81C35743B002D3241 /* VMKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTextView.h; sourceTree = "<group>"; };
+		8E041CC91C35743B002D3241 /* VMKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTextView.m; sourceTree = "<group>"; };
+		8E041CCC1C35744E002D3241 /* VMKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTextField.h; sourceTree = "<group>"; };
+		8E041CCD1C35744E002D3241 /* VMKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTextField.m; sourceTree = "<group>"; };
+		8E041CD01C357469002D3241 /* VMKLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKLabel.h; sourceTree = "<group>"; };
+		8E041CD11C357469002D3241 /* VMKLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKLabel.m; sourceTree = "<group>"; };
+		8E041CD51C358393002D3241 /* VMKInsertCellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKInsertCellViewModel.h; sourceTree = "<group>"; };
+		8E041CD61C358393002D3241 /* VMKInsertCellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKInsertCellViewModel.m; sourceTree = "<group>"; };
+		8E05BEA81D4B4AF100E4D13A /* VMKViewModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKViewModel+Private.h"; sourceTree = "<group>"; };
+		8E0A1B741C53AA3700AF240D /* VMKEditDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKEditDataSource.h; sourceTree = "<group>"; };
+		8E0A1B751C53AA3700AF240D /* VMKEditDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKEditDataSource.m; sourceTree = "<group>"; };
+		8E0A1B7C1C54D4AA00AF240D /* VMKChangeSet+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKChangeSet+Private.h"; sourceTree = "<group>"; };
+		8E178B981C4FFD8E0036E4DD /* VMKDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDataSourceDelegate.h; sourceTree = "<group>"; };
+		8E18CA291E29296D00AFE763 /* FakePasteBoardWithHasImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakePasteBoardWithHasImages.h; sourceTree = "<group>"; };
+		8E18CA2A1E29296D00AFE763 /* FakePasteBoardWithHasImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakePasteBoardWithHasImages.m; sourceTree = "<group>"; };
+		8E18CA2C1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakePasteBoardWithoutHasImage.h; sourceTree = "<group>"; };
+		8E18CA2D1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakePasteBoardWithoutHasImage.m; sourceTree = "<group>"; };
+		8E18CA311E2930F000AFE763 /* VMKControllerModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKControllerModelTests.m; sourceTree = "<group>"; };
+		8E2902ED1C1DCCB000DAD111 /* VMKArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKArrayDataSource.h; sourceTree = "<group>"; };
+		8E2902EE1C1DCCB000DAD111 /* VMKArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKArrayDataSource.m; sourceTree = "<group>"; };
+		8E2902FD1C1DED2F00DAD111 /* VMKCellType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCellType.h; sourceTree = "<group>"; };
+		8E2BC8771E4657B400D1B749 /* VMKMutableArrayDataSource+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKMutableArrayDataSource+Private.h"; sourceTree = "<group>"; };
+		8E2BC8781E46597B00D1B749 /* VMKMutableArrayDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMutableArrayDataSourceTests.m; sourceTree = "<group>"; };
+		8E2BC87A1E47857C00D1B749 /* VMKCellViewModelFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCellViewModelFactory.h; sourceTree = "<group>"; };
+		8E2BC87F1E47A40000D1B749 /* VMKTableViewDelegateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewDelegateTests.m; sourceTree = "<group>"; };
+		8E2BC8811E48619A00D1B749 /* VMKArrayModel+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKArrayModel+Private.h"; sourceTree = "<group>"; };
+		8E3212991C32B4A3005A40C6 /* VMKChooseImageViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChooseImageViewModelType.h; sourceTree = "<group>"; };
+		8E3953E21DE4480C002F48F2 /* VMKTableViewRowActionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewRowActionViewModel.h; sourceTree = "<group>"; };
+		8E3953E31DE4480C002F48F2 /* VMKTableViewRowActionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewRowActionViewModel.m; sourceTree = "<group>"; };
+		8E3953E61DE44C79002F48F2 /* VMKTableViewRowActionsType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewRowActionsType.h; sourceTree = "<group>"; };
+		8E42B4211C5E49CA00A7C0A6 /* VMKViewModelCacheTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewModelCacheTests.m; sourceTree = "<group>"; };
+		8E42B4231C5E7BBD00A7C0A6 /* VMKChangeSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChangeSetTests.m; sourceTree = "<group>"; };
+		8E489E1B1C2D94D200D47401 /* VMKTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewDataSource.h; sourceTree = "<group>"; };
+		8E489E1C1C2D94D200D47401 /* VMKTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewDataSource.m; sourceTree = "<group>"; };
+		8E4D252D1C41639400403491 /* VMKTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewCell.h; sourceTree = "<group>"; };
+		8E4D252E1C41639400403491 /* VMKTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewCell.m; sourceTree = "<group>"; };
+		8E4F6ADD1E1BF964001B10B0 /* VMKTableViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewCellTests.m; sourceTree = "<group>"; };
+		8E50AF391C516E2F00EC98BD /* VMKChooseImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChooseImageController.h; sourceTree = "<group>"; };
+		8E50AF3A1C516E2F00EC98BD /* VMKChooseImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChooseImageController.m; sourceTree = "<group>"; };
+		8E50E7301D4E2941001F3DC2 /* VMKViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewControllerTests.m; sourceTree = "<group>"; };
+		8E50E7321D4E6544001F3DC2 /* FakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeViewController.h; sourceTree = "<group>"; };
+		8E50E7331D4E6544001F3DC2 /* FakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeViewController.m; sourceTree = "<group>"; };
+		8E5517B11E3B5E63001D958C /* VMKCollectionViewDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionViewDataSourceTests.m; sourceTree = "<group>"; };
+		8E5517B31E3B62A1001D958C /* VMKCollectionViewDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKCollectionViewDataSource+Private.h"; sourceTree = "<group>"; };
+		8E5517B61E3B75A0001D958C /* VMKCollectionViewCellTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionViewCellTests.m; sourceTree = "<group>"; };
+		8E5517B81E3B8115001D958C /* VMKCollectionViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionViewControllerTests.m; sourceTree = "<group>"; };
+		8E5517BA1E3B8FB1001D958C /* VMKTableViewHeaderFooterViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewHeaderFooterViewTests.m; sourceTree = "<group>"; };
+		8E5EBBC21D479873003C7522 /* VMKObservableManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKObservableManagerTests.m; sourceTree = "<group>"; };
+		8E5EBBC41D4799FA003C7522 /* VMKObservableManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKObservableManager+Private.h"; sourceTree = "<group>"; };
+		8E62786F1DD5BF9B0073678C /* VMKGroupedDataSourceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKGroupedDataSourceType.h; sourceTree = "<group>"; };
+		8E649D021E1FBE4100D8572D /* VMKInsertCellViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKInsertCellViewModelTests.m; sourceTree = "<group>"; };
+		8E649D051E1FE4EF00D8572D /* VMKAlertControllerViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKAlertControllerViewModelTests.m; sourceTree = "<group>"; };
+		8E649D081E1FE7E000D8572D /* VMKAlertViewModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKAlertViewModel+Private.h"; sourceTree = "<group>"; };
+		8E649D0A1E1FE90E00D8572D /* VMKAlertControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKAlertControllerTests.m; sourceTree = "<group>"; };
+		8E649D0C1E1FE94200D8572D /* VMKAlertController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKAlertController+Private.h"; sourceTree = "<group>"; };
+		8E6958521DD4C13F006CF01A /* VMKGroupedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKGroupedDataSource.h; sourceTree = "<group>"; };
+		8E6958531DD4C13F006CF01A /* VMKGroupedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKGroupedDataSource.m; sourceTree = "<group>"; };
+		8E6AC4AF1DE0976F00399194 /* VMKSingleChangeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKSingleChangeTests.m; sourceTree = "<group>"; };
+		8E6AC4B51DE1E14500399194 /* VMKMappedChildDataSourceIndexPathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMappedChildDataSourceIndexPathTests.m; sourceTree = "<group>"; };
+		8E6AC4B81DE1E5A600399194 /* VMKMultipleDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMultipleDataSourceTests.m; sourceTree = "<group>"; };
+		8E6EABE51DF9B2BA007FFF39 /* VMKMultiSectionDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMultiSectionDataSourceTests.m; sourceTree = "<group>"; };
+		8E728AB41D4801C800A12285 /* VMKObserverNotificationManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKObserverNotificationManagerTests.m; sourceTree = "<group>"; };
+		8E728AB61D48026500A12285 /* FakeNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeNotificationCenter.h; sourceTree = "<group>"; };
+		8E728AB71D48026500A12285 /* FakeNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeNotificationCenter.m; sourceTree = "<group>"; };
+		8E7383A21DE3864A00FFF9AF /* VMKAlertViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAlertViewModel.h; sourceTree = "<group>"; };
+		8E7383A31DE3864A00FFF9AF /* VMKAlertViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKAlertViewModel.m; sourceTree = "<group>"; };
+		8E74828E1E0D3D4E00D03768 /* VMKDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKDataSourceTests.m; sourceTree = "<group>"; };
+		8E74F6E31DE2CB860062B14D /* VMKArrayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKArrayModel.h; sourceTree = "<group>"; };
+		8E74F6E41DE2CB860062B14D /* VMKArrayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKArrayModel.m; sourceTree = "<group>"; };
+		8E74F6E71DE2CED30062B14D /* VMKArrayModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKArrayModelTests.m; sourceTree = "<group>"; };
+		8E74F6E91DE2D1140062B14D /* VMKBindingUpdater+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKBindingUpdater+Private.h"; sourceTree = "<group>"; };
+		8E74F6EA1DE2D89F0062B14D /* VMKArrayUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKArrayUpdater.h; sourceTree = "<group>"; };
+		8E74F6EB1DE2D89F0062B14D /* VMKArrayUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKArrayUpdater.m; sourceTree = "<group>"; };
+		8E74F6EE1DE2DB4E0062B14D /* VMKArrayUpdaterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKArrayUpdaterTests.m; sourceTree = "<group>"; };
+		8E7D28581DE45EB0004B3A03 /* VMKTableViewRowActionCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewRowActionCreator.h; sourceTree = "<group>"; };
+		8E7D28591DE45EB0004B3A03 /* VMKTableViewRowActionCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewRowActionCreator.m; sourceTree = "<group>"; };
+		8E7EBCB21E08127C00854F31 /* VMKGroupedDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKGroupedDataSourceTests.m; sourceTree = "<group>"; };
+		8E7EBCB51E08174200854F31 /* VMKGroupedDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKGroupedDataSource+Private.h"; sourceTree = "<group>"; };
+		8E80F29B1D3BE77300A3ACC8 /* VMKViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewModelTests.m; sourceTree = "<group>"; };
+		8E80F29D1D3BE94300A3ACC8 /* VMKBindingUpdaterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKBindingUpdaterTests.m; sourceTree = "<group>"; };
+		8E8448991C4BCCF60070C3AD /* NSObject+VMKCheckKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+VMKCheckKVO.h"; sourceTree = "<group>"; };
+		8E84489A1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VMKCheckKVO.m"; sourceTree = "<group>"; };
+		8E84489D1C4BF97F0070C3AD /* VMKDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDataSource.h; sourceTree = "<group>"; };
+		8E84489E1C4BF97F0070C3AD /* VMKDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKDataSource.m; sourceTree = "<group>"; };
+		8E8448A21C4BFD240070C3AD /* VMKMultipleDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMultipleDataSource.h; sourceTree = "<group>"; };
+		8E8448A31C4BFD240070C3AD /* VMKMultipleDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMultipleDataSource.m; sourceTree = "<group>"; };
+		8E8448A81C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMappedChildDataSourceIndexPath.h; sourceTree = "<group>"; };
+		8E8448A91C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMappedChildDataSourceIndexPath.m; sourceTree = "<group>"; };
+		8E8FD9851E16C925006AD001 /* VMKArrayDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKArrayDataSourceTests.m; sourceTree = "<group>"; };
+		8E8FD9871E16CB35006AD001 /* VMKArrayDataSource+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKArrayDataSource+Private.h"; sourceTree = "<group>"; };
+		8E94A2491C2C0E860006E33A /* VMKChangeWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChangeWatcher.h; sourceTree = "<group>"; };
+		8E94A24B1C2C0EC90006E33A /* VMKChangeWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChangeWatcher.m; sourceTree = "<group>"; };
+		8E9542EA1EA7B08400D9E20C /* VMKObservable+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKObservable+Private.h"; sourceTree = "<group>"; };
+		8E9553861E099B9900AA2759 /* VMKEditDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKEditDataSourceTests.m; sourceTree = "<group>"; };
+		8E9553881E099CEE00AA2759 /* VMKEditDataSource+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKEditDataSource+Private.h"; sourceTree = "<group>"; };
+		8E97B8471F28E4B2007F6283 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8E9AC6691C3B069B009F66D5 /* VMKTableViewDataSourceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewDataSourceDelegate.h; sourceTree = "<group>"; };
+		8E9E15D81E20149100B73BFA /* VMKChooseImageAlertViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChooseImageAlertViewModel.h; sourceTree = "<group>"; };
+		8E9E15D91E20149100B73BFA /* VMKChooseImageAlertViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChooseImageAlertViewModel.m; sourceTree = "<group>"; };
+		8E9E15DC1E2014C000B73BFA /* VMKChooseImageAlertViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChooseImageAlertViewModelTests.m; sourceTree = "<group>"; };
+		8E9E15DE1E2017ED00B73BFA /* VMKChooseImageAlertViewModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKChooseImageAlertViewModel+Private.h"; sourceTree = "<group>"; };
+		8EA264B51DD8CC82006BC12A /* VMKSingleChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKSingleChange.h; sourceTree = "<group>"; };
+		8EA264B61DD8CC82006BC12A /* VMKSingleChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKSingleChange.m; sourceTree = "<group>"; };
+		8EA264B91DD8D033006BC12A /* VMKSingleChange+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKSingleChange+Private.h"; sourceTree = "<group>"; };
+		8EA636231C2AB170003CDA2A /* VMKDeleteWatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDeleteWatcher.h; sourceTree = "<group>"; };
+		8EA636241C2AB170003CDA2A /* VMKDeleteWatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKDeleteWatcher.m; sourceTree = "<group>"; };
+		8EACB2AE1E4492CC00B95CD0 /* VMKCoreDataViewModel+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKCoreDataViewModel+Private.h"; sourceTree = "<group>"; };
+		8EACB2AF1E44933800B95CD0 /* VMKCoreDataViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCoreDataViewModelTests.m; sourceTree = "<group>"; };
+		8EAD76E51E216CA700932BE4 /* VMKChooseImageViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChooseImageViewModel.h; sourceTree = "<group>"; };
+		8EAD76E61E216CA700932BE4 /* VMKChooseImageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChooseImageViewModel.m; sourceTree = "<group>"; };
+		8EAD76E91E224BF500932BE4 /* VMKImageEditingType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKImageEditingType.h; sourceTree = "<group>"; };
+		8EAD76F31E22595A00932BE4 /* VMKChooseImageViewModel+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKChooseImageViewModel+Private.h"; sourceTree = "<group>"; };
+		8EAD76F41E22599600932BE4 /* VMKChooseImageViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChooseImageViewModelTests.m; sourceTree = "<group>"; };
+		8EB0B5A11DDA49B6005604B1 /* VMKFetchedUpdaterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKFetchedUpdaterTests.m; sourceTree = "<group>"; };
+		8EB0B5A31DDA4ADA005604B1 /* VMKFetchedUpdater+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKFetchedUpdater+Private.h"; sourceTree = "<group>"; };
+		8EB91E721F29E24E00B7C633 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		8EB91E8A1F2A125100B7C633 /* OCMockito.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCMockito.framework; path = Carthage/Build/iOS/OCMockito.framework; sourceTree = "<group>"; };
+		8EB91E8B1F2A125100B7C633 /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Carthage/Build/iOS/OCHamcrest.framework; sourceTree = "<group>"; };
+		8EBCC8281CB2F2C800E8AF2B /* VMKObserverNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKObserverNotificationManager.h; sourceTree = "<group>"; };
+		8EBCC8291CB2F2C800E8AF2B /* VMKObserverNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKObserverNotificationManager.m; sourceTree = "<group>"; };
+		8EBCC82A1CB2F2C800E8AF2B /* VMKObserverNotificationManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKObserverNotificationManager+Private.h"; sourceTree = "<group>"; };
+		8EC31F2C1DD61A9A00F09396 /* VMKMultiRowDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMultiRowDataSource.h; sourceTree = "<group>"; };
+		8EC31F2D1DD61A9A00F09396 /* VMKMultiRowDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMultiRowDataSource.m; sourceTree = "<group>"; };
+		8EC31F301DD61C4900F09396 /* VMKMultipleDataSource+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKMultipleDataSource+Private.h"; sourceTree = "<group>"; };
+		8EC31F321DD6258900F09396 /* VMKMultiSectionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKMultiSectionDataSource.h; sourceTree = "<group>"; };
+		8EC31F331DD6258900F09396 /* VMKMultiSectionDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMultiSectionDataSource.m; sourceTree = "<group>"; };
+		8EC930B31E1BB55300B68467 /* VMKTableViewRowActionViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewRowActionViewModelTests.m; sourceTree = "<group>"; };
+		8EC930B51E1BB8CB00B68467 /* VMKTableViewRowActionCreatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewRowActionCreatorTests.m; sourceTree = "<group>"; };
+		8EC930B71E1BB90000B68467 /* VMKTableViewRowActionCreator+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKTableViewRowActionCreator+Private.h"; sourceTree = "<group>"; };
+		8ECA41D01DC2045A00754E01 /* VMKTableViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewControllerTests.m; sourceTree = "<group>"; };
+		8ECA41D61DC2312E00754E01 /* VMKViewCellType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKViewCellType.h; sourceTree = "<group>"; };
+		8ECB4CEF1E7FB6B50001DB18 /* NSObject+VMKCheckKVOTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+VMKCheckKVOTests.m"; sourceTree = "<group>"; };
+		8ECB4CF11E7FC0E70001DB18 /* FakeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeCollectionView.h; sourceTree = "<group>"; };
+		8ECB4CF21E7FC0E70001DB18 /* FakeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeCollectionView.m; sourceTree = "<group>"; };
+		8ECEB9B91C30768D0012AE8B /* VMKTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewController.h; sourceTree = "<group>"; };
+		8ECEB9BA1C30768D0012AE8B /* VMKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewController.m; sourceTree = "<group>"; };
+		8ECEB9D31C3161B70012AE8B /* VMKEditingType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKEditingType.h; sourceTree = "<group>"; };
+		8ECEC1CF1E798BA600DAEC99 /* FakeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeTableView.h; sourceTree = "<group>"; };
+		8ECEC1D01E798BA600DAEC99 /* FakeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeTableView.m; sourceTree = "<group>"; };
+		8ECEE4C61C1C8CE200017352 /* ViewModelKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewModelKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECEE4C91C1C8CE200017352 /* ViewModelKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelKit.h; sourceTree = "<group>"; };
+		8ECEE4CB1C1C8CE200017352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECEE4D01C1C8CE200017352 /* ViewModelKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewModelKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ECEE4D71C1C8CE200017352 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ECEE4EE1C1C8EAF00017352 /* VMKObservable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKObservable.h; sourceTree = "<group>"; };
+		8ECEE4EF1C1C8EAF00017352 /* VMKObservable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKObservable.m; sourceTree = "<group>"; };
+		8ECEE4F01C1C8EAF00017352 /* VMKObservableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKObservableManager.h; sourceTree = "<group>"; };
+		8ECEE4F11C1C8EAF00017352 /* VMKObservableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKObservableManager.m; sourceTree = "<group>"; };
+		8ECEE4F21C1C8EAF00017352 /* VMKFetchedDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKFetchedDataSource.h; sourceTree = "<group>"; };
+		8ECEE4F31C1C8EAF00017352 /* VMKFetchedDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKFetchedDataSource.m; sourceTree = "<group>"; };
+		8ECEE4F61C1C8EAF00017352 /* VMKDataSourceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDataSourceType.h; sourceTree = "<group>"; };
+		8ECEE5041C1C8EF000017352 /* VMKViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKViewModel.h; sourceTree = "<group>"; };
+		8ECEE5051C1C8EF000017352 /* VMKViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewModel.m; sourceTree = "<group>"; };
+		8ECEE5061C1C8EF000017352 /* VMKCoreDataViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCoreDataViewModel.h; sourceTree = "<group>"; };
+		8ECEE5071C1C8EF000017352 /* VMKCoreDataViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCoreDataViewModel.m; sourceTree = "<group>"; };
+		8ECEE6111C1CA69800017352 /* VMKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKViewController.h; sourceTree = "<group>"; };
+		8ECEE6121C1CA69800017352 /* VMKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewController.m; sourceTree = "<group>"; };
+		8ECEE61A1C1CB72500017352 /* VMKViewModelControllerType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKViewModelControllerType.h; sourceTree = "<group>"; };
+		8ECF58271F3B62D4005E5758 /* VMKMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKMacros.h; sourceTree = "<group>"; };
+		8ED20EF51DE3599D00145C93 /* VMKAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAlertController.h; sourceTree = "<group>"; };
+		8ED20EF61DE3599D00145C93 /* VMKAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKAlertController.m; sourceTree = "<group>"; };
+		8ED20EF91DE35A1300145C93 /* VMKAlertViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKAlertViewModelType.h; sourceTree = "<group>"; };
+		8ED657F51D3C093100DCB5E9 /* VMKObservableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKObservableTests.m; sourceTree = "<group>"; };
+		8ED657F71D3C0DC900DCB5E9 /* FakeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeObject.h; sourceTree = "<group>"; };
+		8ED657F81D3C0DC900DCB5E9 /* FakeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeObject.m; sourceTree = "<group>"; };
+		8EDE0C1C1C4AB1B30091B48B /* VMKControllerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKControllerModel.h; sourceTree = "<group>"; };
+		8EDE0C1D1C4AB1B30091B48B /* VMKControllerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKControllerModel.m; sourceTree = "<group>"; };
+		8EE0DB3F1C3854430059A059 /* VMKTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewDelegate.h; sourceTree = "<group>"; };
+		8EE0DB401C3854430059A059 /* VMKTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewDelegate.m; sourceTree = "<group>"; };
+		8EE0DB481C38700E0059A059 /* VMKBindingUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKBindingUpdater.h; sourceTree = "<group>"; };
+		8EE0DB491C38700E0059A059 /* VMKBindingUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKBindingUpdater.m; sourceTree = "<group>"; };
+		8EE22C901C39853000BF685F /* VMKViewModelCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKViewModelCache.h; sourceTree = "<group>"; };
+		8EE22C911C39853000BF685F /* VMKViewModelCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewModelCache.m; sourceTree = "<group>"; };
+		8EE22C941C39A3D600BF685F /* VMKFetchedUpdater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKFetchedUpdater.h; sourceTree = "<group>"; };
+		8EE22C951C39A3D600BF685F /* VMKFetchedUpdater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKFetchedUpdater.m; sourceTree = "<group>"; };
+		8EE22C991C39A8F800BF685F /* VMKChangeSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKChangeSet.h; sourceTree = "<group>"; };
+		8EE22C9A1C39A8F800BF685F /* VMKChangeSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChangeSet.m; sourceTree = "<group>"; };
+		8EE3CB181DEC0F8F0035E347 /* VMKMultiRowDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKMultiRowDataSourceTests.m; sourceTree = "<group>"; };
+		8EE791DB1E210A3500E10F64 /* TestAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestAssets.xcassets; sourceTree = "<group>"; };
+		8EE791DD1E210FF100E10F64 /* VMKChooseImageControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChooseImageControllerTests.m; sourceTree = "<group>"; };
+		8EE791DF1E21336200E10F64 /* VMKChooseImageController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKChooseImageController+Private.h"; sourceTree = "<group>"; };
+		8EE8BAB51E44BB7600EA47B3 /* VMKViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKViewTests.m; sourceTree = "<group>"; };
+		8EE8BABF1E44C28400EA47B3 /* UIView+VMKInspectableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+VMKInspectableTests.m"; sourceTree = "<group>"; };
+		8EE8BAC11E44C68F00EA47B3 /* VMKFetchedDataSource+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKFetchedDataSource+Private.h"; sourceTree = "<group>"; };
+		8EE8BAC31E44D00300EA47B3 /* VMKFetchedDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKFetchedDataSourceTests.m; sourceTree = "<group>"; };
+		8EF2F2EF1DDB23C200C5C159 /* VMKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKView.h; sourceTree = "<group>"; };
+		8EF2F2F01DDB23C200C5C159 /* VMKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKView.m; sourceTree = "<group>"; };
+		8EF417F81E448BBC00E83E3F /* VMKChangeWatcher+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VMKChangeWatcher+Private.h"; sourceTree = "<group>"; };
+		8EF417FA1E448D3700E83E3F /* VMKChangeWatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKChangeWatcherTests.m; sourceTree = "<group>"; };
+		8EFC7A191E1A696B00A9B74A /* VMKTableViewDataSourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewDataSourceTests.m; sourceTree = "<group>"; };
+		8EFC7A1C1E1A6D8D00A9B74A /* VMKTableViewDataSource+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKTableViewDataSource+Private.h"; sourceTree = "<group>"; };
+		8EFCDB4C1E4384F3007714F8 /* VMKDeleteWatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKDeleteWatcherTests.m; sourceTree = "<group>"; };
+		8EFCDB4E1E4388D2007714F8 /* VMKDeleteWatcher+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKDeleteWatcher+Private.h"; sourceTree = "<group>"; };
+		8EFDC4B11C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDataSourceViewModelType.h; sourceTree = "<group>"; };
+		D79B23FE1DD4749400B266DD /* VMKTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		D79B23FF1DD4749400B266DD /* VMKTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		D79B24021DD477BB00B266DD /* VMKViewHeaderFooterType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKViewHeaderFooterType.h; sourceTree = "<group>"; };
+		D79B24041DD480C600B266DD /* VMKHeaderFooterType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKHeaderFooterType.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ECEE4C21C1C8CE200017352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECEE4CD1C1C8CE200017352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC956121F2A13430008F246 /* OCHamcrest.framework in Frameworks */,
+				8EC956131F2A13430008F246 /* OCMockito.framework in Frameworks */,
+				8ECEE4D11C1C8CE200017352 /* ViewModelKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		216D1E351DD37BB40085D8AB /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				216D1E361DD37BC40085D8AB /* UICollectionViewCell */,
+				216D1E411DD37C160085D8AB /* VMKCollectionViewDataSource.h */,
+				216D1E421DD37C160085D8AB /* VMKCollectionViewDataSource.m */,
+				8E5517B31E3B62A1001D958C /* VMKCollectionViewDataSource+Private.h */,
+				216D1E431DD37C160085D8AB /* VMKCollectionViewDataSourceDelegate.h */,
+			);
+			name = UICollectionView;
+			sourceTree = "<group>";
+		};
+		216D1E361DD37BC40085D8AB /* UICollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				216D1E371DD37BE90085D8AB /* VMKCollectionViewCell.h */,
+				216D1E381DD37BE90085D8AB /* VMKCollectionViewCell.m */,
+			);
+			name = UICollectionViewCell;
+			sourceTree = "<group>";
+		};
+		8E041CC71C35741A002D3241 /* Inspectables */ = {
+			isa = PBXGroup;
+			children = (
+				8E041CBF1C35637B002D3241 /* UIView+VMKInspectables.h */,
+				8E041CC01C35637B002D3241 /* UIView+VMKInspectables.m */,
+				8E041CD01C357469002D3241 /* VMKLabel.h */,
+				8E041CD11C357469002D3241 /* VMKLabel.m */,
+				8E041CC31C35698B002D3241 /* VMKImageView.h */,
+				8E041CC41C35698B002D3241 /* VMKImageView.m */,
+				8E041CC81C35743B002D3241 /* VMKTextView.h */,
+				8E041CC91C35743B002D3241 /* VMKTextView.m */,
+				8E041CCC1C35744E002D3241 /* VMKTextField.h */,
+				8E041CCD1C35744E002D3241 /* VMKTextField.m */,
+				8EF2F2EF1DDB23C200C5C159 /* VMKView.h */,
+				8EF2F2F01DDB23C200C5C159 /* VMKView.m */,
+			);
+			name = Inspectables;
+			sourceTree = "<group>";
+		};
+		8E2902EC1C1DCC6400DAD111 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				8E60C27F1C5D16490011968C /* UITableViewCell */,
+				D79B23FD1DD4726E00B266DD /* UITableViewHeaderFooterView */,
+				8E489E1B1C2D94D200D47401 /* VMKTableViewDataSource.h */,
+				8E489E1C1C2D94D200D47401 /* VMKTableViewDataSource.m */,
+				8EFC7A1C1E1A6D8D00A9B74A /* VMKTableViewDataSource+Private.h */,
+				8E9AC6691C3B069B009F66D5 /* VMKTableViewDataSourceDelegate.h */,
+				8EE0DB3F1C3854430059A059 /* VMKTableViewDelegate.h */,
+				8EE0DB401C3854430059A059 /* VMKTableViewDelegate.m */,
+			);
+			name = UITableView;
+			sourceTree = "<group>";
+		};
+		8E50AF3E1C516E7300EC98BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8ED20EF51DE3599D00145C93 /* VMKAlertController.h */,
+				8ED20EF61DE3599D00145C93 /* VMKAlertController.m */,
+				8E649D0C1E1FE94200D8572D /* VMKAlertController+Private.h */,
+				8E7383A21DE3864A00FFF9AF /* VMKAlertViewModel.h */,
+				8E7383A31DE3864A00FFF9AF /* VMKAlertViewModel.m */,
+				8E649D081E1FE7E000D8572D /* VMKAlertViewModel+Private.h */,
+				8ED20EF91DE35A1300145C93 /* VMKAlertViewModelType.h */,
+				8E9E15D81E20149100B73BFA /* VMKChooseImageAlertViewModel.h */,
+				8E9E15D91E20149100B73BFA /* VMKChooseImageAlertViewModel.m */,
+				8E9E15DE1E2017ED00B73BFA /* VMKChooseImageAlertViewModel+Private.h */,
+				8E50AF391C516E2F00EC98BD /* VMKChooseImageController.h */,
+				8E50AF3A1C516E2F00EC98BD /* VMKChooseImageController.m */,
+				8EE791DF1E21336200E10F64 /* VMKChooseImageController+Private.h */,
+				8EAD76E51E216CA700932BE4 /* VMKChooseImageViewModel.h */,
+				8EAD76E61E216CA700932BE4 /* VMKChooseImageViewModel.m */,
+				8EAD76F31E22595A00932BE4 /* VMKChooseImageViewModel+Private.h */,
+				8E3212991C32B4A3005A40C6 /* VMKChooseImageViewModelType.h */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8E5517B51E3B7132001D958C /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				8E5517B61E3B75A0001D958C /* VMKCollectionViewCellTests.m */,
+				8E5517B11E3B5E63001D958C /* VMKCollectionViewDataSourceTests.m */,
+			);
+			name = UICollectionView;
+			sourceTree = "<group>";
+		};
+		8E60C27F1C5D16490011968C /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8E4D252D1C41639400403491 /* VMKTableViewCell.h */,
+				8E4D252E1C41639400403491 /* VMKTableViewCell.m */,
+				8E3953E21DE4480C002F48F2 /* VMKTableViewRowActionViewModel.h */,
+				8E3953E31DE4480C002F48F2 /* VMKTableViewRowActionViewModel.m */,
+				8E3953E61DE44C79002F48F2 /* VMKTableViewRowActionsType.h */,
+				8E7D28581DE45EB0004B3A03 /* VMKTableViewRowActionCreator.h */,
+				8E7D28591DE45EB0004B3A03 /* VMKTableViewRowActionCreator.m */,
+				8EC930B71E1BB90000B68467 /* VMKTableViewRowActionCreator+Private.h */,
+			);
+			name = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		8E60C2801C5D166D0011968C /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E2BC87A1E47857C00D1B749 /* VMKCellViewModelFactory.h */,
+				8E2902FD1C1DED2F00DAD111 /* VMKCellType.h */,
+				D79B24041DD480C600B266DD /* VMKHeaderFooterType.h */,
+				8E041CD51C358393002D3241 /* VMKInsertCellViewModel.h */,
+				8E041CD61C358393002D3241 /* VMKInsertCellViewModel.m */,
+				8ECA41D61DC2312E00754E01 /* VMKViewCellType.h */,
+				D79B24021DD477BB00B266DD /* VMKViewHeaderFooterType.h */,
+			);
+			name = CellViewModel;
+			sourceTree = "<group>";
+		};
+		8E649D041E1FE4D300D8572D /* CellViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8E649D021E1FBE4100D8572D /* VMKInsertCellViewModelTests.m */,
+			);
+			name = CellViewModel;
+			sourceTree = "<group>";
+		};
+		8E649D071E1FE4FE00D8572D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E649D0A1E1FE90E00D8572D /* VMKAlertControllerTests.m */,
+				8E649D051E1FE4EF00D8572D /* VMKAlertControllerViewModelTests.m */,
+				8E9E15DC1E2014C000B73BFA /* VMKChooseImageAlertViewModelTests.m */,
+				8EE791DD1E210FF100E10F64 /* VMKChooseImageControllerTests.m */,
+				8EAD76F41E22599600932BE4 /* VMKChooseImageViewModelTests.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8E6AC4B11DE1C9AA00399194 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8E5517B81E3B8115001D958C /* VMKCollectionViewControllerTests.m */,
+				8ECA41D01DC2045A00754E01 /* VMKTableViewControllerTests.m */,
+				8E50E7301D4E2941001F3DC2 /* VMKViewControllerTests.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8E6AC4B21DE1C9D600399194 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E80F29B1D3BE77300A3ACC8 /* VMKViewModelTests.m */,
+				8E74F6E71DE2CED30062B14D /* VMKArrayModelTests.m */,
+				8E74F6EE1DE2DB4E0062B14D /* VMKArrayUpdaterTests.m */,
+				8E18CA311E2930F000AFE763 /* VMKControllerModelTests.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8E6AC4B31DE1CA0A00399194 /* ChangeSet */ = {
+			isa = PBXGroup;
+			children = (
+				8E42B4231C5E7BBD00A7C0A6 /* VMKChangeSetTests.m */,
+				8E6AC4AF1DE0976F00399194 /* VMKSingleChangeTests.m */,
+				8EB0B5A11DDA49B6005604B1 /* VMKFetchedUpdaterTests.m */,
+			);
+			name = ChangeSet;
+			sourceTree = "<group>";
+		};
+		8E6AC4B41DE1CA4B00399194 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8EF417FA1E448D3700E83E3F /* VMKChangeWatcherTests.m */,
+				8EACB2AF1E44933800B95CD0 /* VMKCoreDataViewModelTests.m */,
+				8EFCDB4C1E4384F3007714F8 /* VMKDeleteWatcherTests.m */,
+				8E42B4211C5E49CA00A7C0A6 /* VMKViewModelCacheTests.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		8E6AC4B71DE1E38A00399194 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8E8FD9851E16C925006AD001 /* VMKArrayDataSourceTests.m */,
+				8E74828E1E0D3D4E00D03768 /* VMKDataSourceTests.m */,
+				8E9553861E099B9900AA2759 /* VMKEditDataSourceTests.m */,
+				8EE8BAC31E44D00300EA47B3 /* VMKFetchedDataSourceTests.m */,
+				8E7EBCB21E08127C00854F31 /* VMKGroupedDataSourceTests.m */,
+				8E6AC4B51DE1E14500399194 /* VMKMappedChildDataSourceIndexPathTests.m */,
+				8E6AC4B81DE1E5A600399194 /* VMKMultipleDataSourceTests.m */,
+				8EE3CB181DEC0F8F0035E347 /* VMKMultiRowDataSourceTests.m */,
+				8E6EABE51DF9B2BA007FFF39 /* VMKMultiSectionDataSourceTests.m */,
+				8E2BC8781E46597B00D1B749 /* VMKMutableArrayDataSourceTests.m */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		8E8448A11C4BFCD20070C3AD /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8EEC67641E0C5C6F00D1A303 /* Abstract */,
+				8EEC67671E0C5CD000D1A303 /* Provider */,
+				8EEC67661E0C5C9500D1A303 /* Multi */,
+				8EEC67651E0C5C8700D1A303 /* Grouped */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		8EA264B41DD88A41006BC12A /* ChangeSet */ = {
+			isa = PBXGroup;
+			children = (
+				8E74F6EA1DE2D89F0062B14D /* VMKArrayUpdater.h */,
+				8E74F6EB1DE2D89F0062B14D /* VMKArrayUpdater.m */,
+				8EB0B5A31DDA4ADA005604B1 /* VMKFetchedUpdater+Private.h */,
+				8EE22C941C39A3D600BF685F /* VMKFetchedUpdater.h */,
+				8EE22C951C39A3D600BF685F /* VMKFetchedUpdater.m */,
+				8EE22C991C39A8F800BF685F /* VMKChangeSet.h */,
+				8EE22C9A1C39A8F800BF685F /* VMKChangeSet.m */,
+				8E0A1B7C1C54D4AA00AF240D /* VMKChangeSet+Private.h */,
+				8EA264B51DD8CC82006BC12A /* VMKSingleChange.h */,
+				8EA264B61DD8CC82006BC12A /* VMKSingleChange.m */,
+				8EA264B91DD8D033006BC12A /* VMKSingleChange+Private.h */,
+			);
+			name = ChangeSet;
+			sourceTree = "<group>";
+		};
+		8EB17C721E1BF7610003A827 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				8E4F6ADD1E1BF964001B10B0 /* VMKTableViewCellTests.m */,
+				8EFC7A191E1A696B00A9B74A /* VMKTableViewDataSourceTests.m */,
+				8E2BC87F1E47A40000D1B749 /* VMKTableViewDelegateTests.m */,
+				8E5517BA1E3B8FB1001D958C /* VMKTableViewHeaderFooterViewTests.m */,
+				8EC930B51E1BB8CB00B68467 /* VMKTableViewRowActionCreatorTests.m */,
+				8EC930B31E1BB55300B68467 /* VMKTableViewRowActionViewModelTests.m */,
+			);
+			name = UITableView;
+			sourceTree = "<group>";
+		};
+		8EB91E891F2A125100B7C633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB91E8B1F2A125100B7C633 /* OCHamcrest.framework */,
+				8EB91E8A1F2A125100B7C633 /* OCMockito.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		8ECEE4BC1C1C8CE200017352 = {
+			isa = PBXGroup;
+			children = (
+				8E97B8471F28E4B2007F6283 /* README.md */,
+				8EB91E721F29E24E00B7C633 /* CONTRIBUTING.md */,
+				8ECEE4C81C1C8CE200017352 /* ViewModelKit */,
+				8ECEE4D41C1C8CE200017352 /* ViewModelKitTests */,
+				8ECEE4C71C1C8CE200017352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ECEE4C71C1C8CE200017352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ECEE4C61C1C8CE200017352 /* ViewModelKit.framework */,
+				8ECEE4D01C1C8CE200017352 /* ViewModelKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ECEE4C81C1C8CE200017352 /* ViewModelKit */ = {
+			isa = PBXGroup;
+			children = (
+				8ECEE4C91C1C8CE200017352 /* ViewModelKit.h */,
+				8ECEE4CB1C1C8CE200017352 /* Info.plist */,
+				8ECF58271F3B62D4005E5758 /* VMKMacros.h */,
+				8E60C2801C5D166D0011968C /* CellViewModel */,
+				8EA264B41DD88A41006BC12A /* ChangeSet */,
+				8E50AF3E1C516E7300EC98BD /* Controller */,
+				8ECEE60F1C1CA63A00017352 /* CoreData */,
+				8E8448A11C4BFCD20070C3AD /* DataSource */,
+				8E041CC71C35741A002D3241 /* Inspectables */,
+				8ECEE60D1C1CA61300017352 /* Model */,
+				8ECEE60E1C1CA61D00017352 /* Observer */,
+				216D1E351DD37BB40085D8AB /* UICollectionView */,
+				8E2902EC1C1DCC6400DAD111 /* UITableView */,
+				8ECEE6101C1CA65B00017352 /* ViewController */,
+			);
+			path = ViewModelKit;
+			sourceTree = "<group>";
+		};
+		8ECEE4D41C1C8CE200017352 /* ViewModelKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E649D041E1FE4D300D8572D /* CellViewModel */,
+				8E6AC4B31DE1CA0A00399194 /* ChangeSet */,
+				8E649D071E1FE4FE00D8572D /* Controller */,
+				8E6AC4B41DE1CA4B00399194 /* CoreData */,
+				8E6AC4B71DE1E38A00399194 /* DataSource */,
+				8ED657FA1D3C0EA000DCB5E9 /* Helper */,
+				8EE8BAC21E44CFDE00EA47B3 /* Inspectables */,
+				8E6AC4B21DE1C9D600399194 /* Model */,
+				8ED657FC1D3C0ED200DCB5E9 /* Observer */,
+				8E5517B51E3B7132001D958C /* UICollectionView */,
+				8EB17C721E1BF7610003A827 /* UITableView */,
+				8E6AC4B11DE1C9AA00399194 /* ViewController */,
+			);
+			path = ViewModelKitTests;
+			sourceTree = "<group>";
+		};
+		8ECEE60D1C1CA61300017352 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E74F6E31DE2CB860062B14D /* VMKArrayModel.h */,
+				8E74F6E41DE2CB860062B14D /* VMKArrayModel.m */,
+				8E2BC8811E48619A00D1B749 /* VMKArrayModel+Private.h */,
+				8EDE0C1C1C4AB1B30091B48B /* VMKControllerModel.h */,
+				8EDE0C1D1C4AB1B30091B48B /* VMKControllerModel.m */,
+				8EFDC4B11C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h */,
+				8ECEB9D31C3161B70012AE8B /* VMKEditingType.h */,
+				8EAD76E91E224BF500932BE4 /* VMKImageEditingType.h */,
+				8ECEE5041C1C8EF000017352 /* VMKViewModel.h */,
+				8ECEE5051C1C8EF000017352 /* VMKViewModel.m */,
+				8E05BEA81D4B4AF100E4D13A /* VMKViewModel+Private.h */,
+				8EE22C901C39853000BF685F /* VMKViewModelCache.h */,
+				8EE22C911C39853000BF685F /* VMKViewModelCache.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8ECEE60E1C1CA61D00017352 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				8E8448991C4BCCF60070C3AD /* NSObject+VMKCheckKVO.h */,
+				8E84489A1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.m */,
+				8EE0DB481C38700E0059A059 /* VMKBindingUpdater.h */,
+				8E74F6E91DE2D1140062B14D /* VMKBindingUpdater+Private.h */,
+				8EE0DB491C38700E0059A059 /* VMKBindingUpdater.m */,
+				8ECEE4EE1C1C8EAF00017352 /* VMKObservable.h */,
+				8ECEE4EF1C1C8EAF00017352 /* VMKObservable.m */,
+				8E9542EA1EA7B08400D9E20C /* VMKObservable+Private.h */,
+				8ECEE4F01C1C8EAF00017352 /* VMKObservableManager.h */,
+				8ECEE4F11C1C8EAF00017352 /* VMKObservableManager.m */,
+				8E5EBBC41D4799FA003C7522 /* VMKObservableManager+Private.h */,
+				8EBCC8281CB2F2C800E8AF2B /* VMKObserverNotificationManager.h */,
+				8EBCC8291CB2F2C800E8AF2B /* VMKObserverNotificationManager.m */,
+				8EBCC82A1CB2F2C800E8AF2B /* VMKObserverNotificationManager+Private.h */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
+		8ECEE60F1C1CA63A00017352 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8E94A2491C2C0E860006E33A /* VMKChangeWatcher.h */,
+				8E94A24B1C2C0EC90006E33A /* VMKChangeWatcher.m */,
+				8EF417F81E448BBC00E83E3F /* VMKChangeWatcher+Private.h */,
+				8ECEE5061C1C8EF000017352 /* VMKCoreDataViewModel.h */,
+				8ECEE5071C1C8EF000017352 /* VMKCoreDataViewModel.m */,
+				8EACB2AE1E4492CC00B95CD0 /* VMKCoreDataViewModel+Private.h */,
+				8EA636231C2AB170003CDA2A /* VMKDeleteWatcher.h */,
+				8EA636241C2AB170003CDA2A /* VMKDeleteWatcher.m */,
+				8EFCDB4E1E4388D2007714F8 /* VMKDeleteWatcher+Private.h */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		8ECEE6101C1CA65B00017352 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				216D1E3D1DD37BFD0085D8AB /* VMKCollectionViewController.h */,
+				216D1E3E1DD37BFD0085D8AB /* VMKCollectionViewController.m */,
+				8ECEB9B91C30768D0012AE8B /* VMKTableViewController.h */,
+				8ECEB9BA1C30768D0012AE8B /* VMKTableViewController.m */,
+				8ECEE6111C1CA69800017352 /* VMKViewController.h */,
+				8ECEE6121C1CA69800017352 /* VMKViewController.m */,
+				8ECEE61A1C1CB72500017352 /* VMKViewModelControllerType.h */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8ED657FA1D3C0EA000DCB5E9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8EE791DB1E210A3500E10F64 /* TestAssets.xcassets */,
+				8EB91E891F2A125100B7C633 /* Frameworks */,
+				8E728AB61D48026500A12285 /* FakeNotificationCenter.h */,
+				8E728AB71D48026500A12285 /* FakeNotificationCenter.m */,
+				8ED657F71D3C0DC900DCB5E9 /* FakeObject.h */,
+				8ED657F81D3C0DC900DCB5E9 /* FakeObject.m */,
+				8E18CA291E29296D00AFE763 /* FakePasteBoardWithHasImages.h */,
+				8E18CA2A1E29296D00AFE763 /* FakePasteBoardWithHasImages.m */,
+				8E18CA2C1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.h */,
+				8E18CA2D1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.m */,
+				8E50E7321D4E6544001F3DC2 /* FakeViewController.h */,
+				8E50E7331D4E6544001F3DC2 /* FakeViewController.m */,
+				8ECEE4D71C1C8CE200017352 /* Info.plist */,
+				8ECEC1CF1E798BA600DAEC99 /* FakeTableView.h */,
+				8ECEC1D01E798BA600DAEC99 /* FakeTableView.m */,
+				8ECB4CF11E7FC0E70001DB18 /* FakeCollectionView.h */,
+				8ECB4CF21E7FC0E70001DB18 /* FakeCollectionView.m */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		8ED657FC1D3C0ED200DCB5E9 /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				8E80F29D1D3BE94300A3ACC8 /* VMKBindingUpdaterTests.m */,
+				8E5EBBC21D479873003C7522 /* VMKObservableManagerTests.m */,
+				8ED657F51D3C093100DCB5E9 /* VMKObservableTests.m */,
+				8E728AB41D4801C800A12285 /* VMKObserverNotificationManagerTests.m */,
+				8ECB4CEF1E7FB6B50001DB18 /* NSObject+VMKCheckKVOTests.m */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
+		8EE8BAC21E44CFDE00EA47B3 /* Inspectables */ = {
+			isa = PBXGroup;
+			children = (
+				8EE8BAB51E44BB7600EA47B3 /* VMKViewTests.m */,
+				8EE8BABF1E44C28400EA47B3 /* UIView+VMKInspectableTests.m */,
+			);
+			name = Inspectables;
+			sourceTree = "<group>";
+		};
+		8EEC67641E0C5C6F00D1A303 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				8E84489D1C4BF97F0070C3AD /* VMKDataSource.h */,
+				8E84489E1C4BF97F0070C3AD /* VMKDataSource.m */,
+				8E178B981C4FFD8E0036E4DD /* VMKDataSourceDelegate.h */,
+				8ECEE4F61C1C8EAF00017352 /* VMKDataSourceType.h */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		8EEC67651E0C5C8700D1A303 /* Grouped */ = {
+			isa = PBXGroup;
+			children = (
+				8E6958521DD4C13F006CF01A /* VMKGroupedDataSource.h */,
+				8E6958531DD4C13F006CF01A /* VMKGroupedDataSource.m */,
+				8E7EBCB51E08174200854F31 /* VMKGroupedDataSource+Private.h */,
+				8E62786F1DD5BF9B0073678C /* VMKGroupedDataSourceType.h */,
+			);
+			name = Grouped;
+			sourceTree = "<group>";
+		};
+		8EEC67661E0C5C9500D1A303 /* Multi */ = {
+			isa = PBXGroup;
+			children = (
+				8E0A1B741C53AA3700AF240D /* VMKEditDataSource.h */,
+				8E0A1B751C53AA3700AF240D /* VMKEditDataSource.m */,
+				8E9553881E099CEE00AA2759 /* VMKEditDataSource+Private.h */,
+				8E8448A81C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.h */,
+				8E8448A91C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.m */,
+				8E8448A21C4BFD240070C3AD /* VMKMultipleDataSource.h */,
+				8E8448A31C4BFD240070C3AD /* VMKMultipleDataSource.m */,
+				8EC31F301DD61C4900F09396 /* VMKMultipleDataSource+Private.h */,
+				8EC31F2C1DD61A9A00F09396 /* VMKMultiRowDataSource.h */,
+				8EC31F2D1DD61A9A00F09396 /* VMKMultiRowDataSource.m */,
+				8EC31F321DD6258900F09396 /* VMKMultiSectionDataSource.h */,
+				8EC31F331DD6258900F09396 /* VMKMultiSectionDataSource.m */,
+			);
+			name = Multi;
+			sourceTree = "<group>";
+		};
+		8EEC67671E0C5CD000D1A303 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				8E2902ED1C1DCCB000DAD111 /* VMKArrayDataSource.h */,
+				8E2902EE1C1DCCB000DAD111 /* VMKArrayDataSource.m */,
+				8E8FD9871E16CB35006AD001 /* VMKArrayDataSource+Private.h */,
+				8ECEE4F21C1C8EAF00017352 /* VMKFetchedDataSource.h */,
+				8ECEE4F31C1C8EAF00017352 /* VMKFetchedDataSource.m */,
+				8EE8BAC11E44C68F00EA47B3 /* VMKFetchedDataSource+Private.h */,
+				216D1E291DD379620085D8AB /* VMKMutableArrayDataSource.h */,
+				216D1E2A1DD379620085D8AB /* VMKMutableArrayDataSource.m */,
+				8E2BC8771E4657B400D1B749 /* VMKMutableArrayDataSource+Private.h */,
+			);
+			name = Provider;
+			sourceTree = "<group>";
+		};
+		D79B23FD1DD4726E00B266DD /* UITableViewHeaderFooterView */ = {
+			isa = PBXGroup;
+			children = (
+				D79B23FE1DD4749400B266DD /* VMKTableViewHeaderFooterView.h */,
+				D79B23FF1DD4749400B266DD /* VMKTableViewHeaderFooterView.m */,
+			);
+			name = UITableViewHeaderFooterView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8ECEE4C31C1C8CE200017352 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE0DB4A1C38700E0059A059 /* VMKBindingUpdater.h in Headers */,
+				8ECEB9D41C3161B70012AE8B /* VMKEditingType.h in Headers */,
+				8E2902FF1C1DED2F00DAD111 /* VMKCellType.h in Headers */,
+				8E041CD71C358393002D3241 /* VMKInsertCellViewModel.h in Headers */,
+				8EA636251C2AB170003CDA2A /* VMKDeleteWatcher.h in Headers */,
+				8E4D252F1C41639400403491 /* VMKTableViewCell.h in Headers */,
+				8E9542EC1EA7B08400D9E20C /* VMKObservable+Private.h in Headers */,
+				8ECEE61B1C1CB72500017352 /* VMKViewModelControllerType.h in Headers */,
+				8ECA41D71DC2316700754E01 /* VMKViewCellType.h in Headers */,
+				8E50AF3B1C516E2F00EC98BD /* VMKChooseImageController.h in Headers */,
+				8E74F6EC1DE2D89F0062B14D /* VMKArrayUpdater.h in Headers */,
+				8EB0B5A41DDA4D01005604B1 /* VMKFetchedUpdater+Private.h in Headers */,
+				8E32129A1C32B4A3005A40C6 /* VMKChooseImageViewModelType.h in Headers */,
+				8ECEE4CA1C1C8CE200017352 /* ViewModelKit.h in Headers */,
+				216D1E471DD37C160085D8AB /* VMKCollectionViewDataSource.h in Headers */,
+				8E5517B41E3B62A1001D958C /* VMKCollectionViewDataSource+Private.h in Headers */,
+				8E7D285A1DE45EB0004B3A03 /* VMKTableViewRowActionCreator.h in Headers */,
+				8ECEE6131C1CA69800017352 /* VMKViewController.h in Headers */,
+				8EE22C961C39A3D600BF685F /* VMKFetchedUpdater.h in Headers */,
+				8ECEB9BB1C30768D0012AE8B /* VMKTableViewController.h in Headers */,
+				8EA264BA1DD8D033006BC12A /* VMKSingleChange+Private.h in Headers */,
+				8E9AC66A1C3B069B009F66D5 /* VMKTableViewDataSourceDelegate.h in Headers */,
+				D79B24061DD48CC500B266DD /* VMKViewHeaderFooterType.h in Headers */,
+				8ED20EFA1DE35A1300145C93 /* VMKAlertViewModelType.h in Headers */,
+				8ECEE4FB1C1C8EAF00017352 /* VMKObservableManager.h in Headers */,
+				D79B24001DD4749400B266DD /* VMKTableViewHeaderFooterView.h in Headers */,
+				8E9E15DA1E20149100B73BFA /* VMKChooseImageAlertViewModel.h in Headers */,
+				8E84489B1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.h in Headers */,
+				8E3953E41DE4480C002F48F2 /* VMKTableViewRowActionViewModel.h in Headers */,
+				8ED20EF71DE3599D00145C93 /* VMKAlertController.h in Headers */,
+				8ECF58281F3B636A005E5758 /* VMKMacros.h in Headers */,
+				8EBCC82D1CB2F2C800E8AF2B /* VMKObserverNotificationManager+Private.h in Headers */,
+				8EAD76E71E216CA700932BE4 /* VMKChooseImageViewModel.h in Headers */,
+				216D1E3A1DD37BE90085D8AB /* VMKCollectionViewCell.h in Headers */,
+				8E041CC11C35637B002D3241 /* UIView+VMKInspectables.h in Headers */,
+				8ECEE4F91C1C8EAF00017352 /* VMKObservable.h in Headers */,
+				216D1E3F1DD37BFD0085D8AB /* VMKCollectionViewController.h in Headers */,
+				8E041CCE1C35744E002D3241 /* VMKTextField.h in Headers */,
+				8ECEE5081C1C8EF000017352 /* VMKViewModel.h in Headers */,
+				8E649D091E1FE7E000D8572D /* VMKAlertViewModel+Private.h in Headers */,
+				8E3953E81DE44C79002F48F2 /* VMKTableViewRowActionsType.h in Headers */,
+				216D1E2B1DD379620085D8AB /* VMKMutableArrayDataSource.h in Headers */,
+				8EF417F91E448BBC00E83E3F /* VMKChangeWatcher+Private.h in Headers */,
+				8E9E15DF1E2017ED00B73BFA /* VMKChooseImageAlertViewModel+Private.h in Headers */,
+				8E8448AA1C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.h in Headers */,
+				8E8448A41C4BFD240070C3AD /* VMKMultipleDataSource.h in Headers */,
+				8E7383A41DE3864A00FFF9AF /* VMKAlertViewModel.h in Headers */,
+				8ECEE50A1C1C8EF000017352 /* VMKCoreDataViewModel.h in Headers */,
+				8E6278701DD5BF9B0073678C /* VMKGroupedDataSourceType.h in Headers */,
+				8ECEE4FD1C1C8EAF00017352 /* VMKFetchedDataSource.h in Headers */,
+				8E2902EF1C1DCCB000DAD111 /* VMKArrayDataSource.h in Headers */,
+				8E041CCA1C35743B002D3241 /* VMKTextView.h in Headers */,
+				8EAD76EA1E224BF500932BE4 /* VMKImageEditingType.h in Headers */,
+				216D1E491DD37C160085D8AB /* VMKCollectionViewDataSourceDelegate.h in Headers */,
+				8EF2F2F11DDB23C200C5C159 /* VMKView.h in Headers */,
+				8EE22C921C39853000BF685F /* VMKViewModelCache.h in Headers */,
+				8E041CC51C35698B002D3241 /* VMKImageView.h in Headers */,
+				8E6958541DD4C13F006CF01A /* VMKGroupedDataSource.h in Headers */,
+				8E5EBBC51D4799FA003C7522 /* VMKObservableManager+Private.h in Headers */,
+				8E84489F1C4BF97F0070C3AD /* VMKDataSource.h in Headers */,
+				8E94A24A1C2C0E860006E33A /* VMKChangeWatcher.h in Headers */,
+				8EC31F2E1DD61A9A00F09396 /* VMKMultiRowDataSource.h in Headers */,
+				8EE22C9B1C39A8F800BF685F /* VMKChangeSet.h in Headers */,
+				8ECEE5011C1C8EAF00017352 /* VMKDataSourceType.h in Headers */,
+				8EBCC82B1CB2F2C800E8AF2B /* VMKObserverNotificationManager.h in Headers */,
+				8E041CD21C357469002D3241 /* VMKLabel.h in Headers */,
+				8E178B991C4FFD8E0036E4DD /* VMKDataSourceDelegate.h in Headers */,
+				8E0A1B761C53AA3700AF240D /* VMKEditDataSource.h in Headers */,
+				8EE0DB411C3854430059A059 /* VMKTableViewDelegate.h in Headers */,
+				8EC31F311DD61C4900F09396 /* VMKMultipleDataSource+Private.h in Headers */,
+				8E05BEA91D4B4AF100E4D13A /* VMKViewModel+Private.h in Headers */,
+				8E7EBCB71E08174200854F31 /* VMKGroupedDataSource+Private.h in Headers */,
+				8E9553891E099E4000AA2759 /* VMKEditDataSource+Private.h in Headers */,
+				8EDE0C1E1C4AB1B30091B48B /* VMKControllerModel.h in Headers */,
+				8E489E1E1C2D94D200D47401 /* VMKTableViewDataSource.h in Headers */,
+				8EA264B71DD8CC82006BC12A /* VMKSingleChange.h in Headers */,
+				8EC31F341DD6258900F09396 /* VMKMultiSectionDataSource.h in Headers */,
+				8E74F6E51DE2CB860062B14D /* VMKArrayModel.h in Headers */,
+				8EFDC4B31C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h in Headers */,
+				8E2BC87B1E47857C00D1B749 /* VMKCellViewModelFactory.h in Headers */,
+				D79B24051DD48CA500B266DD /* VMKHeaderFooterType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8ECEE4C51C1C8CE200017352 /* ViewModelKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECEE4DA1C1C8CE200017352 /* Build configuration list for PBXNativeTarget "ViewModelKit" */;
+			buildPhases = (
+				8ECEE4C11C1C8CE200017352 /* Sources */,
+				8ECEE4C21C1C8CE200017352 /* Frameworks */,
+				8ECEE4C31C1C8CE200017352 /* Headers */,
+				8ECEE4C41C1C8CE200017352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ViewModelKit;
+			productName = ViewModelKit;
+			productReference = 8ECEE4C61C1C8CE200017352 /* ViewModelKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8ECEE4CF1C1C8CE200017352 /* ViewModelKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ECEE4DD1C1C8CE200017352 /* Build configuration list for PBXNativeTarget "ViewModelKitTests" */;
+			buildPhases = (
+				8E0412451F2A1AF5008C601E /* Carthage check */,
+				8ECEE4CC1C1C8CE200017352 /* Sources */,
+				8ECEE4CD1C1C8CE200017352 /* Frameworks */,
+				8ECEE4CE1C1C8CE200017352 /* Resources */,
+				8E0412411F2A16C2008C601E /* Copy Testing Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8ECEE4D31C1C8CE200017352 /* PBXTargetDependency */,
+			);
+			name = ViewModelKitTests;
+			productName = ViewModelKitTests;
+			productReference = 8ECEE4D01C1C8CE200017352 /* ViewModelKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ECEE4BD1C1C8CE200017352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VMK;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Andre Trettin";
+				TargetAttributes = {
+					8ECEE4C51C1C8CE200017352 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					8ECEE4CF1C1C8CE200017352 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 85XT4HAH76;
+						DevelopmentTeamName = "Andre Trettin";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8ECEE4C01C1C8CE200017352 /* Build configuration list for PBXProject "ViewModelKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8ECEE4BC1C1C8CE200017352;
+			productRefGroup = 8ECEE4C71C1C8CE200017352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ECEE4C51C1C8CE200017352 /* ViewModelKit */,
+				8ECEE4CF1C1C8CE200017352 /* ViewModelKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ECEE4C41C1C8CE200017352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECEE4CE1C1C8CE200017352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EE791DC1E210A3500E10F64 /* TestAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E0412451F2A1AF5008C601E /* Carthage check */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Carthage check";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage bootstrap --cache-builds --platform \"$PLATFORM_NAME\" --project-directory \"$SRCROOT\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ECEE4C11C1C8CE200017352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8448A01C4BF97F0070C3AD /* VMKDataSource.m in Sources */,
+				8EF2F2F21DDB23C200C5C159 /* VMKView.m in Sources */,
+				8E6958551DD4C13F006CF01A /* VMKGroupedDataSource.m in Sources */,
+				8EE0DB4B1C38700E0059A059 /* VMKBindingUpdater.m in Sources */,
+				8E84489C1C4BCCF60070C3AD /* NSObject+VMKCheckKVO.m in Sources */,
+				216D1E3B1DD37BE90085D8AB /* VMKCollectionViewCell.m in Sources */,
+				8E74F6ED1DE2D89F0062B14D /* VMKArrayUpdater.m in Sources */,
+				8E041CC21C35637B002D3241 /* UIView+VMKInspectables.m in Sources */,
+				8ECEB9BC1C30768D0012AE8B /* VMKTableViewController.m in Sources */,
+				8E7D285B1DE45EB0004B3A03 /* VMKTableViewRowActionCreator.m in Sources */,
+				8E041CD81C358393002D3241 /* VMKInsertCellViewModel.m in Sources */,
+				8EAD76E81E216CA700932BE4 /* VMKChooseImageViewModel.m in Sources */,
+				8EDE0C1F1C4AB1B30091B48B /* VMKControllerModel.m in Sources */,
+				D79B24011DD4749400B266DD /* VMKTableViewHeaderFooterView.m in Sources */,
+				8E041CD31C357469002D3241 /* VMKLabel.m in Sources */,
+				8EBCC82C1CB2F2C800E8AF2B /* VMKObserverNotificationManager.m in Sources */,
+				8E4D25301C41639400403491 /* VMKTableViewCell.m in Sources */,
+				8E7383A51DE3864A00FFF9AF /* VMKAlertViewModel.m in Sources */,
+				8EE0DB421C3854430059A059 /* VMKTableViewDelegate.m in Sources */,
+				8ECEE50B1C1C8EF000017352 /* VMKCoreDataViewModel.m in Sources */,
+				8E2902F01C1DCCB000DAD111 /* VMKArrayDataSource.m in Sources */,
+				8ECEE5091C1C8EF000017352 /* VMKViewModel.m in Sources */,
+				8EC31F351DD6258900F09396 /* VMKMultiSectionDataSource.m in Sources */,
+				8E041CCB1C35743B002D3241 /* VMKTextView.m in Sources */,
+				8ED20EF81DE3599D00145C93 /* VMKAlertController.m in Sources */,
+				8E8448AB1C4C098D0070C3AD /* VMKMappedChildDataSourceIndexPath.m in Sources */,
+				8E94A24C1C2C0EC90006E33A /* VMKChangeWatcher.m in Sources */,
+				8EE22C971C39A3D600BF685F /* VMKFetchedUpdater.m in Sources */,
+				8E74F6E61DE2CB860062B14D /* VMKArrayModel.m in Sources */,
+				8E50AF3C1C516E2F00EC98BD /* VMKChooseImageController.m in Sources */,
+				8ECEE4FC1C1C8EAF00017352 /* VMKObservableManager.m in Sources */,
+				8E3953E51DE4480C002F48F2 /* VMKTableViewRowActionViewModel.m in Sources */,
+				8E9E15DB1E20149100B73BFA /* VMKChooseImageAlertViewModel.m in Sources */,
+				8EC31F2F1DD61A9A00F09396 /* VMKMultiRowDataSource.m in Sources */,
+				8EE22C9C1C39A8F800BF685F /* VMKChangeSet.m in Sources */,
+				8ECEE6141C1CA69800017352 /* VMKViewController.m in Sources */,
+				8EE22C931C39853000BF685F /* VMKViewModelCache.m in Sources */,
+				8E041CCF1C35744E002D3241 /* VMKTextField.m in Sources */,
+				8E8448A51C4BFD240070C3AD /* VMKMultipleDataSource.m in Sources */,
+				8E0A1B771C53AA3700AF240D /* VMKEditDataSource.m in Sources */,
+				216D1E401DD37BFD0085D8AB /* VMKCollectionViewController.m in Sources */,
+				216D1E2C1DD379620085D8AB /* VMKMutableArrayDataSource.m in Sources */,
+				8EA264B81DD8CC82006BC12A /* VMKSingleChange.m in Sources */,
+				8ECEE4FE1C1C8EAF00017352 /* VMKFetchedDataSource.m in Sources */,
+				8E041CC61C35698B002D3241 /* VMKImageView.m in Sources */,
+				8EA636261C2AB170003CDA2A /* VMKDeleteWatcher.m in Sources */,
+				216D1E481DD37C160085D8AB /* VMKCollectionViewDataSource.m in Sources */,
+				8ECEE4FA1C1C8EAF00017352 /* VMKObservable.m in Sources */,
+				8E489E1F1C2D94D200D47401 /* VMKTableViewDataSource.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8ECEE4CC1C1C8CE200017352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EAD76F51E22599600932BE4 /* VMKChooseImageViewModelTests.m in Sources */,
+				8E50E7341D4E6544001F3DC2 /* FakeViewController.m in Sources */,
+				8EB0B5A21DDA49B6005604B1 /* VMKFetchedUpdaterTests.m in Sources */,
+				8E6AC4B61DE1E14500399194 /* VMKMappedChildDataSourceIndexPathTests.m in Sources */,
+				8E7EBCB31E08127C00854F31 /* VMKGroupedDataSourceTests.m in Sources */,
+				8E80F29E1D3BE94300A3ACC8 /* VMKBindingUpdaterTests.m in Sources */,
+				8E18CA2B1E29296D00AFE763 /* FakePasteBoardWithHasImages.m in Sources */,
+				8EF417FB1E448D3700E83E3F /* VMKChangeWatcherTests.m in Sources */,
+				8E9553871E099B9900AA2759 /* VMKEditDataSourceTests.m in Sources */,
+				8E42B4221C5E49CA00A7C0A6 /* VMKViewModelCacheTests.m in Sources */,
+				8E42B4241C5E7BBD00A7C0A6 /* VMKChangeSetTests.m in Sources */,
+				8E5EBBC31D479873003C7522 /* VMKObservableManagerTests.m in Sources */,
+				8ECB4CF01E7FB6B50001DB18 /* NSObject+VMKCheckKVOTests.m in Sources */,
+				8EFC7A1A1E1A696B00A9B74A /* VMKTableViewDataSourceTests.m in Sources */,
+				8E728AB81D48026500A12285 /* FakeNotificationCenter.m in Sources */,
+				8E649D031E1FBE4100D8572D /* VMKInsertCellViewModelTests.m in Sources */,
+				8E18CA321E2930F000AFE763 /* VMKControllerModelTests.m in Sources */,
+				8E649D061E1FE4EF00D8572D /* VMKAlertControllerViewModelTests.m in Sources */,
+				8E5517BB1E3B8FB1001D958C /* VMKTableViewHeaderFooterViewTests.m in Sources */,
+				8EE791DE1E210FF100E10F64 /* VMKChooseImageControllerTests.m in Sources */,
+				8ED657F91D3C0DC900DCB5E9 /* FakeObject.m in Sources */,
+				8E18CA2E1E292A8100AFE763 /* FakePasteBoardWithoutHasImage.m in Sources */,
+				8EC930B41E1BB55300B68467 /* VMKTableViewRowActionViewModelTests.m in Sources */,
+				8ECEC1D11E798BA600DAEC99 /* FakeTableView.m in Sources */,
+				8EE8BAC01E44C28400EA47B3 /* UIView+VMKInspectableTests.m in Sources */,
+				8E9E15DD1E2014C000B73BFA /* VMKChooseImageAlertViewModelTests.m in Sources */,
+				8E2BC8791E46597B00D1B749 /* VMKMutableArrayDataSourceTests.m in Sources */,
+				8E649D0B1E1FE90E00D8572D /* VMKAlertControllerTests.m in Sources */,
+				8E5517B21E3B5E63001D958C /* VMKCollectionViewDataSourceTests.m in Sources */,
+				8ECB4CF31E7FC0E70001DB18 /* FakeCollectionView.m in Sources */,
+				8EFCDB4D1E4384F3007714F8 /* VMKDeleteWatcherTests.m in Sources */,
+				8EACB2B01E44933800B95CD0 /* VMKCoreDataViewModelTests.m in Sources */,
+				8E5517B71E3B75A0001D958C /* VMKCollectionViewCellTests.m in Sources */,
+				8E6AC4B01DE0976F00399194 /* VMKSingleChangeTests.m in Sources */,
+				8ED657F61D3C093100DCB5E9 /* VMKObservableTests.m in Sources */,
+				8E2BC8801E47A40000D1B749 /* VMKTableViewDelegateTests.m in Sources */,
+				8ECA41D11DC2045A00754E01 /* VMKTableViewControllerTests.m in Sources */,
+				8EE8BAC41E44D00300EA47B3 /* VMKFetchedDataSourceTests.m in Sources */,
+				8E50E7311D4E2941001F3DC2 /* VMKViewControllerTests.m in Sources */,
+				8E8FD9861E16C925006AD001 /* VMKArrayDataSourceTests.m in Sources */,
+				8E80F29C1D3BE77300A3ACC8 /* VMKViewModelTests.m in Sources */,
+				8EC930B61E1BB8CB00B68467 /* VMKTableViewRowActionCreatorTests.m in Sources */,
+				8E74F6EF1DE2DB4E0062B14D /* VMKArrayUpdaterTests.m in Sources */,
+				8EE8BAB61E44BB7600EA47B3 /* VMKViewTests.m in Sources */,
+				8E74F6E81DE2CED30062B14D /* VMKArrayModelTests.m in Sources */,
+				8E5517B91E3B8115001D958C /* VMKCollectionViewControllerTests.m in Sources */,
+				8E4F6ADE1E1BF964001B10B0 /* VMKTableViewCellTests.m in Sources */,
+				8E728AB51D4801C800A12285 /* VMKObserverNotificationManagerTests.m in Sources */,
+				8E6AC4B91DE1E5A600399194 /* VMKMultipleDataSourceTests.m in Sources */,
+				8E74828F1E0D3D4E00D03768 /* VMKDataSourceTests.m in Sources */,
+				8EE3CB191DEC0F8F0035E347 /* VMKMultiRowDataSourceTests.m in Sources */,
+				8E6EABE61DF9B2BA007FFF39 /* VMKMultiSectionDataSourceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8ECEE4D31C1C8CE200017352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8ECEE4C51C1C8CE200017352 /* ViewModelKit */;
+			targetProxy = 8ECEE4D21C1C8CE200017352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8ECEE4D81C1C8CE200017352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_INTEGER = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8ECEE4D91C1C8CE200017352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_SECURITY_FLOATLOOPCOUNTER = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_RAND = YES;
+				CLANG_ANALYZER_SECURITY_INSECUREAPI_STRCPY = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_INTEGER = YES;
+				CLANG_UNDEFINED_BEHAVIOR_SANITIZER_NULLABILITY = YES;
+				CLANG_WARN_ASSIGN_ENUM = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_CXX0X_EXTENSIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CLANG_WARN__EXIT_TIME_DESTRUCTORS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PEDANTIC = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8ECEE4DB1C1C8CE200017352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewModelKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.andretrettin.ViewModelKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8ECEE4DC1C1C8CE200017352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ViewModelKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.andretrettin.ViewModelKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		8ECEE4DE1C1C8CE200017352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 85XT4HAH76;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ViewModelKitTests",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_PEDANTIC = NO;
+				INFOPLIST_FILE = ViewModelKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = de.andretrettin.ViewModelKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		8ECEE4DF1C1C8CE200017352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 85XT4HAH76;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ViewModelKitTests",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_PEDANTIC = NO;
+				INFOPLIST_FILE = ViewModelKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = de.andretrettin.ViewModelKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ECEE4C01C1C8CE200017352 /* Build configuration list for PBXProject "ViewModelKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECEE4D81C1C8CE200017352 /* Debug */,
+				8ECEE4D91C1C8CE200017352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECEE4DA1C1C8CE200017352 /* Build configuration list for PBXNativeTarget "ViewModelKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECEE4DB1C1C8CE200017352 /* Debug */,
+				8ECEE4DC1C1C8CE200017352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ECEE4DD1C1C8CE200017352 /* Build configuration list for PBXNativeTarget "ViewModelKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ECEE4DE1C1C8CE200017352 /* Debug */,
+				8ECEE4DF1C1C8CE200017352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ECEE4BD1C1C8CE200017352 /* Project object */;
+}

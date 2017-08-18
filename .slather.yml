@@ -1,0 +1,10 @@
+# .slather.yml
+
+coverage_service: coveralls
+xcodeproj: ViewModelKit.xcodeproj
+scheme: ViewModelKit
+ignore:
+  - ViewModelKitTests/*
+  - VMKExample/*
+  - Carthage/*
+  - docs

@@ -1,0 +1,3 @@
+# testing
+github "hamcrest/OCHamcrest" ~> 6.0
+github "jonreid/OCMockito" ~> 4.0
