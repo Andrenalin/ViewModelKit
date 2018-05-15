@@ -93,7 +93,7 @@
 #pragma mark - dataSource
 
 - (VMKDataSource *)dataSourceAtIndex:(NSUInteger)index {
-    if (index < 0 || index >= self.dataSources.count) {
+    if (index >= self.dataSources.count) {
         return nil;
     }
 
