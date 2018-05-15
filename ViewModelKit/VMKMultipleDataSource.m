@@ -84,12 +84,19 @@
 }
 
 - (void)removeDataSourceAtIndex:(NSUInteger)index {
-    [self removeDataSource:[self.dataSources objectAtIndex:index]];
+    VMKDataSource *dataSource = [self dataSourceAtIndex:index];
+    if (dataSource) {
+        [self removeDataSource:dataSource];
+    }
 }
 
 #pragma mark - dataSource
 
 - (VMKDataSource *)dataSourceAtIndex:(NSUInteger)index {
+    if (index < 0 || index >= self.dataSources.count) {
+        return nil;
+    }
+
     return [self.dataSources objectAtIndex:index];
 }
 
