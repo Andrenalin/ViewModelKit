@@ -194,8 +194,22 @@
 
 #pragma mark - VMKCollectionViewDataSourceDelegate required
 
+- (NSString *)dataSource:(VMKCollectionViewDataSource *)dataSource supplementaryViewOfKindElement:(NSString *)kind atIndex:(NSIndexPath *)indexPath {
+    return nil;
+}
+
 - (NSString *)dataSource:(VMKCollectionViewDataSource *)dataSource cellIdentifierAtIndexPath:(NSIndexPath *)indexPath {
     return @"Cell";
+}
+
+#pragma mark - VMKCollectionViewDataSourceDelegate optional section header
+
+- (void)dataSource:(VMKCollectionViewDataSource *)dataSource configureHeaderView:(UICollectionReusableView *)headerView withViewModel:(__kindof VMKViewModel<VMKHeaderFooterType> *)viewModel {
+    
+    if ([headerView conformsToProtocol:@protocol(VMKViewHeaderFooterType)]) {
+        id<VMKViewHeaderFooterType> viewModelHeader = (id<VMKViewHeaderFooterType>)headerView;
+        viewModelHeader.viewModel = viewModel;
+    }
 }
 
 - (void)dataSource:(VMKCollectionViewDataSource *)dataSource configureCell:(UICollectionViewCell *)cell withViewModel:(__kindof VMKViewModel<VMKCellType> *)viewModel {
