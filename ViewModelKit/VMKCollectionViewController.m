@@ -15,6 +15,8 @@
 #import "VMKChangeSet.h"
 #import "VMKSingleChange.h"
 
+#import "VMKViewHeaderFooterType.h"
+
 
 @interface VMKCollectionViewController ()
 @property (nonatomic, assign) BOOL observingViewModel;
