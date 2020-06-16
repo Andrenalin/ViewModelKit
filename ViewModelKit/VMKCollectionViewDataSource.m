@@ -97,9 +97,26 @@
 }
 
 // TODO: Supplementary Views
-//- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
-//    
-//}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
+    UICollectionReusableView *supplementaryView = [UICollectionReusableView new];
+    supplementaryView.hidden = YES;
+    
+    if ([self.delegate respondsToSelector: @selector(dataSource:supplementaryViewOfKindElement:atIndex:)]) {
+        NSString *reuseID = [self.delegate dataSource: self supplementaryViewOfKindElement: kind atIndex: indexPath];
+        
+        if (reuseID && kind == UICollectionElementKindSectionHeader) {
+            supplementaryView = [collectionView dequeueReusableSupplementaryViewOfKind: UICollectionElementKindSectionHeader withReuseIdentifier: reuseID forIndexPath: indexPath];
+            
+            __kindof VMKViewModel<VMKHeaderFooterType> *viewModel = [self viewModelAtIndexPath:indexPath];
+            if (viewModel) {
+                //only called if underlying object implements supplementaryViewOfKindElement:
+                [self.delegate dataSource: self configureHeaderView: supplementaryView withViewModel: viewModel];
+            }
+        }
+    }
+    return supplementaryView;
+}
 
 #pragma mark - UICollectionViewDataSource Reordering
 

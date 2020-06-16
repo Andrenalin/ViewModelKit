@@ -72,6 +72,7 @@ FOUNDATION_EXPORT const unsigned char ViewModelKitVersionString[];
 #import <ViewModelKit/VMKCollectionViewDataSource.h>
 #import <ViewModelKit/VMKCollectionViewDataSourceDelegate.h>
 #import <ViewModelKit/VMKCollectionViewCell.h>
+#import <ViewModelKit/VMKCollectionReusableHeaderView.h>
 
 // DataSource
 #import <ViewModelKit/VMKDataSource.h>

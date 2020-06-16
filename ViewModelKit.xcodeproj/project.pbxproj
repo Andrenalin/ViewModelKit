@@ -191,6 +191,8 @@
 		8EFC7A1A1E1A696B00A9B74A /* VMKTableViewDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFC7A191E1A696B00A9B74A /* VMKTableViewDataSourceTests.m */; };
 		8EFCDB4D1E4384F3007714F8 /* VMKDeleteWatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFCDB4C1E4384F3007714F8 /* VMKDeleteWatcherTests.m */; };
 		8EFDC4B31C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFDC4B11C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9423D42493AF4600B04794 /* VMKCollectionReusableHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = BF9423D22493AF4600B04794 /* VMKCollectionReusableHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9423D52493AF4600B04794 /* VMKCollectionReusableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF9423D32493AF4600B04794 /* VMKCollectionReusableHeaderView.m */; };
 		D79B24001DD4749400B266DD /* VMKTableViewHeaderFooterView.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B23FE1DD4749400B266DD /* VMKTableViewHeaderFooterView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D79B24011DD4749400B266DD /* VMKTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D79B23FF1DD4749400B266DD /* VMKTableViewHeaderFooterView.m */; };
 		D79B24051DD48CA500B266DD /* VMKHeaderFooterType.h in Headers */ = {isa = PBXBuildFile; fileRef = D79B24041DD480C600B266DD /* VMKHeaderFooterType.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -430,6 +432,8 @@
 		8EFCDB4C1E4384F3007714F8 /* VMKDeleteWatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKDeleteWatcherTests.m; sourceTree = "<group>"; };
 		8EFCDB4E1E4388D2007714F8 /* VMKDeleteWatcher+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VMKDeleteWatcher+Private.h"; sourceTree = "<group>"; };
 		8EFDC4B11C2B2B08002DA7D9 /* VMKDataSourceViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKDataSourceViewModelType.h; sourceTree = "<group>"; };
+		BF9423D22493AF4600B04794 /* VMKCollectionReusableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKCollectionReusableHeaderView.h; sourceTree = "<group>"; };
+		BF9423D32493AF4600B04794 /* VMKCollectionReusableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKCollectionReusableHeaderView.m; sourceTree = "<group>"; };
 		D79B23FE1DD4749400B266DD /* VMKTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMKTableViewHeaderFooterView.h; sourceTree = "<group>"; };
 		D79B23FF1DD4749400B266DD /* VMKTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMKTableViewHeaderFooterView.m; sourceTree = "<group>"; };
 		D79B24021DD477BB00B266DD /* VMKViewHeaderFooterType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VMKViewHeaderFooterType.h; sourceTree = "<group>"; };
@@ -460,6 +464,7 @@
 		216D1E351DD37BB40085D8AB /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				BF9423D12493AF4600B04794 /* UICollectionReusableView */,
 				216D1E361DD37BC40085D8AB /* UICollectionViewCell */,
 				216D1E411DD37C160085D8AB /* VMKCollectionViewDataSource.h */,
 				216D1E421DD37C160085D8AB /* VMKCollectionViewDataSource.m */,
@@ -938,6 +943,15 @@
 			name = Provider;
 			sourceTree = "<group>";
 		};
+		BF9423D12493AF4600B04794 /* UICollectionReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				BF9423D22493AF4600B04794 /* VMKCollectionReusableHeaderView.h */,
+				BF9423D32493AF4600B04794 /* VMKCollectionReusableHeaderView.m */,
+			);
+			path = UICollectionReusableView;
+			sourceTree = "<group>";
+		};
 		D79B23FD1DD4726E00B266DD /* UITableViewHeaderFooterView */ = {
 			isa = PBXGroup;
 			children = (
@@ -954,6 +968,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF9423D42493AF4600B04794 /* VMKCollectionReusableHeaderView.h in Headers */,
 				8EE0DB4A1C38700E0059A059 /* VMKBindingUpdater.h in Headers */,
 				8ECEB9D41C3161B70012AE8B /* VMKEditingType.h in Headers */,
 				8E2902FF1C1DED2F00DAD111 /* VMKCellType.h in Headers */,
@@ -1105,6 +1120,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 8ECEE4BC1C1C8CE200017352;
@@ -1199,6 +1215,7 @@
 				8E8448A51C4BFD240070C3AD /* VMKMultipleDataSource.m in Sources */,
 				8E0A1B771C53AA3700AF240D /* VMKEditDataSource.m in Sources */,
 				216D1E401DD37BFD0085D8AB /* VMKCollectionViewController.m in Sources */,
+				BF9423D52493AF4600B04794 /* VMKCollectionReusableHeaderView.m in Sources */,
 				216D1E2C1DD379620085D8AB /* VMKMutableArrayDataSource.m in Sources */,
 				8EA264B81DD8CC82006BC12A /* VMKSingleChange.m in Sources */,
 				8ECEE4FE1C1C8EAF00017352 /* VMKFetchedDataSource.m in Sources */,
@@ -1458,6 +1475,7 @@
 				INFOPLIST_FILE = ViewModelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.andretrettin.ViewModelKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1478,6 +1496,7 @@
 				INFOPLIST_FILE = ViewModelKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.andretrettin.ViewModelKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
