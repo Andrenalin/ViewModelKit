@@ -100,6 +100,7 @@
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath {
     UICollectionReusableView *supplementaryView = [UICollectionReusableView new];
+    supplementaryView.hidden = YES;
     
     if ([self.delegate respondsToSelector: @selector(dataSource:supplementaryViewOfKindElement:atIndex:)]) {
         NSString *reuseID = [self.delegate dataSource: self supplementaryViewOfKindElement: kind atIndex: indexPath];

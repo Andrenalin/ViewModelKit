@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @optional
 
-- (NSString *)dataSource:(VMKCollectionViewDataSource *)dataSource supplementaryViewOfKindElement:(NSString *)kind atIndex:(NSIndexPath *)indexPath;
+- (nonnull NSString *)dataSource:(VMKCollectionViewDataSource *)dataSource supplementaryViewOfKindElement:(NSString *)kind atIndex:(NSIndexPath *)indexPath;
 
 - (void)dataSource:(VMKCollectionViewDataSource *)dataSource configureHeaderView:(UICollectionReusableView *)headerView withViewModel:(__kindof VMKViewModel<VMKHeaderFooterType> *)viewModel;
 

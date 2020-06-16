@@ -196,10 +196,6 @@
 
 #pragma mark - VMKCollectionViewDataSourceDelegate required
 
-- (NSString *)dataSource:(VMKCollectionViewDataSource *)dataSource supplementaryViewOfKindElement:(NSString *)kind atIndex:(NSIndexPath *)indexPath {
-    return nil;
-}
-
 - (NSString *)dataSource:(VMKCollectionViewDataSource *)dataSource cellIdentifierAtIndexPath:(NSIndexPath *)indexPath {
     return @"Cell";
 }
